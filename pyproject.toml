@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=68.0", "wheel"]
+build-backend = "setuptools.backends._legacy:_Backend"
+
+[project]
+name = "temporal-vectors"
+version = "0.1.0"
+description = "Linear representations for temporal knowledge forecasting in LLMs"
+readme = "CLAUDE.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [
+    {name = "Carlos Zenyi Gomez Aryoshi", email = "c.gomezaryoshi.23@abdn.ac.uk"},
+]
+dependencies = [
+    "torch>=2.2",
+    "transformers>=4.38",
+    "accelerate>=0.27",
+    "datasets>=2.17",
+    "numpy>=1.24",
+    "scipy>=1.11",
+    "scikit-learn>=1.3",
+    "pandas>=2.0",
+    "matplotlib>=3.8",
+    "seaborn>=0.13",
+    "tqdm",
+    "pyyaml",
+    "mwclient>=0.10",
+    "sentencepiece",
+    "protobuf",
+    "plotly>=5.18",
+    "safetensors",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "ruff",
+    "nbstripout",
+    "ipykernel",
+    "jupyter",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 99
+target-version = ["py310"]
+
+[tool.ruff]
+line-length = 99
+select = ["E", "F", "I", "W"]
+src = ["src", "scripts", "tests"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]

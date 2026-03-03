@@ -1,0 +1,36 @@
+name: temporal-vectors
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch=2.2
+  - torchvision
+  - torchaudio
+  - pytorch-cuda=12.1
+  - numpy>=1.24
+  - scipy>=1.11
+  - scikit-learn>=1.3
+  - pandas>=2.0
+  - matplotlib>=3.8
+  - seaborn>=0.13
+  - jupyter
+  - ipykernel
+  - tqdm
+  - pyyaml
+  - pip
+  - pip:
+      - transformers>=4.38
+      - accelerate>=0.27
+      - datasets>=2.17
+      - mwclient>=0.10
+      - sentencepiece
+      - protobuf
+      - plotly>=5.18
+      - nbstripout
+      - black
+      - ruff
+      - pytest
+      - safetensors
