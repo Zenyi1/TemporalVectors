@@ -1,1 +1,48 @@
 .claude/
+
+# ── Data (large / fetched at runtime) ────────────────────────────
+data/raw/*
+!data/raw/.gitkeep
+data/cache/*
+!data/cache/.gitkeep
+
+# ── Model artifacts ──────────────────────────────────────────────
+outputs/hidden_states/*
+!outputs/hidden_states/.gitkeep
+outputs/vectors/*
+!outputs/vectors/.gitkeep
+*.pt
+*.bin
+*.safetensors
+
+# ── Python ───────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+*.egg
+dist/
+build/
+.eggs/
+
+# ── Virtual environments ─────────────────────────────────────────
+.venv/
+venv/
+env/
+
+# ── Jupyter ──────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── IDE ──────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# ── OS ───────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+
+# ── HuggingFace ──────────────────────────────────────────────────
+*.lock
