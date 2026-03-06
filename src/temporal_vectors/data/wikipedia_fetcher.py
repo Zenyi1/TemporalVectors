@@ -5,6 +5,7 @@ and diffs them at sentence level to produce temporal counterfactual pairs.
 """
 
 import difflib
+import itertools
 import logging
 import re
 import time
@@ -173,13 +174,21 @@ def _extract_lead_section(wikitext: str) -> str:
     parts = re.split(r"\n==[^=]", wikitext, maxsplit=1)
     lead = parts[0]
 
-    # Strip common wiki markup
-    lead = re.sub(r"\{\{[^}]*\}\}", "", lead)  # templates
+    # Strip nested templates (infoboxes, etc.) -- handle nesting up to 5 levels
+    for _ in range(5):
+        cleaned = re.sub(r"\{\{[^{}]*\}\}", "", lead)
+        if cleaned == lead:
+            break
+        lead = cleaned
+
+    # Strip remaining wiki markup
+    lead = re.sub(r"\[\[(?:File|Image|Category):[^\]]*\]\]", "", lead)  # file/category links
     lead = re.sub(r"\[\[(?:[^|\]]*\|)?([^\]]*)\]\]", r"\1", lead)  # [[link|text]] -> text
     lead = re.sub(r"<ref[^>]*>.*?</ref>", "", lead, flags=re.DOTALL)  # <ref>...</ref>
     lead = re.sub(r"<ref[^/]*/?>", "", lead)  # <ref .../> self-closing
     lead = re.sub(r"<[^>]+>", "", lead)  # remaining HTML tags
     lead = re.sub(r"'{2,}", "", lead)  # bold/italic markers
+    lead = re.sub(r"\|[^\n]*", "", lead)  # pipe-delimited infobox remnants
     lead = re.sub(r"\s+", " ", lead)  # collapse whitespace
 
     return lead.strip()
@@ -228,14 +237,15 @@ def fetch_revision_text(
         # Target mid-year for a representative snapshot
         timestamp = f"{year}0701000000"
 
-        revisions = list(
+        # mwclient ignores limit=; use islice to take only the first revision
+        revisions = list(itertools.islice(
             page.revisions(
                 start=timestamp,
-                limit=1,
                 dir="older",
                 prop="content|timestamp",
-            )
-        )
+            ),
+            1,
+        ))
         time.sleep(rate_limit)
 
         if not revisions:
