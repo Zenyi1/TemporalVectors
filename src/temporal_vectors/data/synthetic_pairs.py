@@ -132,22 +132,27 @@ EVENTS: list[dict[str, str]] = [
 # ── Tense shift templates ────────────────────────────────────────
 
 TENSE_TEMPLATES: list[dict[str, str]] = [
-    {"old": "The {entity} is expected to {action}.", "new": "The {entity} has {action_past}.", "domain": "politics"},
-    {"old": "{entity} is currently {state}.", "new": "{entity} was previously {state}.", "domain": "politics"},
-    {"old": "{entity} will compete in the {event}.", "new": "{entity} competed in the {event}.", "domain": "sports"},
-    {"old": "Scientists are developing {thing}.", "new": "Scientists developed {thing}.", "domain": "science"},
-    {"old": "The {entity} is planning to {action}.", "new": "The {entity} has {action_past}.", "domain": "economics"},
+    {"old": "The {entity} is expected to {action} in the coming months according to officials.", "new": "The {entity} has officially {action_past} after months of deliberation and planning.", "domain": "politics"},
+    {"old": "According to recent reports, the {entity} is currently {state} with several nations involved.", "new": "According to historical records, the {entity} was previously {state} with several nations involved.", "domain": "politics"},
+    {"old": "The {entity} will compete in the upcoming {event} alongside other major delegations.", "new": "The {entity} competed in the recent {event} alongside other major delegations.", "domain": "sports"},
+    {"old": "Scientists at leading research institutions are developing {thing} that could transform the field.", "new": "Scientists at leading research institutions developed {thing} that has transformed the field.", "domain": "science"},
+    {"old": "The {entity} is planning to {action} as part of a broader economic strategy.", "new": "The {entity} has {action_past} as part of a broader economic strategy.", "domain": "economics"},
+    {"old": "Officials confirm that the {entity} is preparing to {action} within the next quarter.", "new": "Officials confirmed that the {entity} {action_past} during the previous quarter.", "domain": "politics"},
+    {"old": "The {entity} is actively {state} and expects to reach agreement by the end of the year.", "new": "The {entity} was actively {state} and reached agreement by the end of the year.", "domain": "economics"},
+    {"old": "Experts predict that the {entity} will soon {action} given the current political climate.", "new": "Experts noted that the {entity} has already {action_past} given the political climate at the time.", "domain": "politics"},
 ]
 
 TENSE_SLOTS: list[dict[str, str]] = [
-    {"entity": "European Union", "action": "impose new sanctions on Russia", "action_past": "imposed new sanctions on Russia", "event": "summit", "state": "negotiating a trade deal", "thing": "a new mRNA vaccine"},
-    {"entity": "United Nations", "action": "adopt a climate resolution", "action_past": "adopted a climate resolution", "event": "General Assembly", "state": "debating the resolution", "thing": "a framework for AI governance"},
-    {"entity": "World Health Organization", "action": "declare a global health emergency", "action_past": "declared a global health emergency", "event": "annual meeting", "state": "monitoring the outbreak", "thing": "a rapid diagnostic test"},
-    {"entity": "Federal Reserve", "action": "raise interest rates", "action_past": "raised interest rates", "event": "policy meeting", "state": "reviewing monetary policy", "thing": "a new digital currency"},
-    {"entity": "NASA", "action": "launch a Mars mission", "action_past": "launched a Mars mission", "event": "space program review", "state": "testing the launch system", "thing": "a reusable rocket engine"},
-    {"entity": "government", "action": "introduce new climate legislation", "action_past": "introduced new climate legislation", "event": "parliamentary session", "state": "drafting the policy", "thing": "a carbon capture system"},
-    {"entity": "Olympic Committee", "action": "select the host city", "action_past": "selected the host city", "event": "2028 Olympics", "state": "reviewing bids", "thing": "a new scoring system"},
-    {"entity": "tech industry", "action": "adopt AI safety standards", "action_past": "adopted AI safety standards", "event": "global summit", "state": "developing guidelines", "thing": "an open-source language model"},
+    {"entity": "European Union", "action": "impose new sanctions on Russia", "action_past": "imposed new sanctions on Russia", "event": "economic summit", "state": "negotiating a comprehensive trade deal", "thing": "a new mRNA vaccine for respiratory diseases"},
+    {"entity": "United Nations", "action": "adopt a landmark climate resolution", "action_past": "adopted a landmark climate resolution", "event": "General Assembly session", "state": "debating the proposed resolution on emissions", "thing": "a framework for international AI governance"},
+    {"entity": "World Health Organization", "action": "declare a global health emergency", "action_past": "declared a global health emergency", "event": "annual health assembly meeting", "state": "monitoring the ongoing disease outbreak closely", "thing": "a rapid diagnostic test for emerging pathogens"},
+    {"entity": "Federal Reserve", "action": "raise interest rates significantly", "action_past": "raised interest rates significantly", "event": "quarterly policy meeting", "state": "reviewing its monetary policy framework", "thing": "a new digital currency backed by the government"},
+    {"entity": "NASA", "action": "launch an ambitious crewed Mars mission", "action_past": "launched an ambitious crewed Mars mission", "event": "space program review session", "state": "testing the next-generation launch system", "thing": "a reusable rocket engine for deep space travel"},
+    {"entity": "government", "action": "introduce comprehensive new climate legislation", "action_past": "introduced comprehensive new climate legislation", "event": "parliamentary session on energy policy", "state": "drafting the environmental policy framework", "thing": "a large-scale carbon capture and storage system"},
+    {"entity": "International Olympic Committee", "action": "select the host city for the games", "action_past": "selected the host city for the games", "event": "2028 Summer Olympics selection process", "state": "reviewing bids from multiple candidate cities", "thing": "a new standardised scoring system for gymnastics"},
+    {"entity": "tech industry", "action": "adopt comprehensive AI safety standards", "action_past": "adopted comprehensive AI safety standards", "event": "global technology governance summit", "state": "developing voluntary guidelines for AI deployment", "thing": "an open-source large language model for research"},
+    {"entity": "World Trade Organization", "action": "finalise new global trade agreements", "action_past": "finalised new global trade agreements", "event": "ministerial conference on trade reform", "state": "mediating disputes between member nations", "thing": "a digital platform for cross-border commerce"},
+    {"entity": "African Union", "action": "establish a continental free trade zone", "action_past": "established a continental free trade zone", "event": "summit on economic integration", "state": "coordinating infrastructure investment programmes", "thing": "a mobile banking system for underserved regions"},
 ]
 
 # ── Control pair templates (non-temporal changes) ────────────────
@@ -171,16 +176,26 @@ SYNONYM_SWAPS: list[tuple[str, str]] = [
 ]
 
 CONTROL_SENTENCES: list[dict[str, Any]] = [
-    {"text": "The {adj1} building stands in the center of the city.", "adj_key": "adj1", "domain": "geography"},
-    {"text": "Researchers {verb1} that the results are consistent.", "adj_key": "verb1", "domain": "science"},
-    {"text": "The company plans to {verb1} its customers with the new service.", "adj_key": "verb1", "domain": "economics"},
-    {"text": "The {adj1} discovery changed our understanding of physics.", "adj_key": "adj1", "domain": "science"},
-    {"text": "The athlete made a {adj1} comeback in the tournament.", "adj_key": "adj1", "domain": "sports"},
-    {"text": "The {adj1} economy continues to grow steadily.", "adj_key": "adj1", "domain": "economics"},
-    {"text": "It is {adj1} to understand the implications of this policy.", "adj_key": "adj1", "domain": "politics"},
-    {"text": "The {adj1} nation has a diverse cultural heritage.", "adj_key": "adj1", "domain": "geography"},
-    {"text": "The team will {verb1} a new training program next season.", "adj_key": "verb1", "domain": "sports"},
-    {"text": "The {adj1} technology enables faster data processing.", "adj_key": "adj1", "domain": "technology"},
+    {"text": "The {adj1} building stands in the center of the city and attracts thousands of tourists every year.", "adj_key": "adj1", "domain": "geography"},
+    {"text": "Researchers {verb1} that the experimental results are consistent with the theoretical predictions published last year.", "adj_key": "verb1", "domain": "science"},
+    {"text": "The company announced plans to {verb1} its customers with the newly launched digital service platform.", "adj_key": "verb1", "domain": "economics"},
+    {"text": "The {adj1} discovery fundamentally changed our understanding of modern physics and cosmology.", "adj_key": "adj1", "domain": "science"},
+    {"text": "The veteran athlete made a remarkable and {adj1} comeback during the international tournament.", "adj_key": "adj1", "domain": "sports"},
+    {"text": "The {adj1} economy of the region continues to grow steadily despite global uncertainty.", "adj_key": "adj1", "domain": "economics"},
+    {"text": "It is {adj1} to fully understand the long-term implications of this government policy.", "adj_key": "adj1", "domain": "politics"},
+    {"text": "The {adj1} nation located in Southeast Asia has a remarkably diverse cultural heritage.", "adj_key": "adj1", "domain": "geography"},
+    {"text": "The coaching staff will {verb1} an intensive new training program ahead of the next competitive season.", "adj_key": "verb1", "domain": "sports"},
+    {"text": "The {adj1} technology developed at the university enables significantly faster data processing.", "adj_key": "adj1", "domain": "technology"},
+    {"text": "The {adj1} infrastructure project is expected to benefit millions of residents across the metropolitan area.", "adj_key": "adj1", "domain": "geography"},
+    {"text": "The research team plans to {verb1} a series of experiments to validate the initial findings.", "adj_key": "verb1", "domain": "science"},
+    {"text": "The {adj1} market conditions have prompted several multinational corporations to revise their strategies.", "adj_key": "adj1", "domain": "economics"},
+    {"text": "The {adj1} political alliance between the two parties shaped the legislative agenda for the entire session.", "adj_key": "adj1", "domain": "politics"},
+    {"text": "Analysts {verb1} that the data supports a strong correlation between the two economic indicators.", "adj_key": "verb1", "domain": "economics"},
+    {"text": "The {adj1} stadium was renovated extensively to host the upcoming international sporting event.", "adj_key": "adj1", "domain": "sports"},
+    {"text": "The {adj1} software platform has attracted millions of users across more than fifty countries worldwide.", "adj_key": "adj1", "domain": "technology"},
+    {"text": "The panel of experts will {verb1} a comprehensive review of the existing environmental regulations.", "adj_key": "verb1", "domain": "politics"},
+    {"text": "The {adj1} bridge connecting the two districts was designed by a renowned architectural firm.", "adj_key": "adj1", "domain": "geography"},
+    {"text": "Engineers plan to {verb1} the development of a prototype that meets the latest industry standards.", "adj_key": "verb1", "domain": "technology"},
 ]
 
 
@@ -370,11 +385,16 @@ def _generate_spelling_controls(seed: int) -> list[dict[str, Any]]:
     ]
 
     context_templates = [
-        "The {word} of the policy was debated in parliament.",
-        "Scientists {word} the data from the experiment.",
-        "The national {word} budget was increased significantly.",
-        "The {word} has been a topic of public discussion.",
-        "The research {word} was published in a leading journal.",
+        "The {word} of the government's new policy was debated at length in parliament by both parties.",
+        "Scientists at the national laboratory decided to {word} all of the data from the multi-year experiment.",
+        "The national {word} budget was increased significantly to address growing concerns about security threats.",
+        "The {word} of artificial intelligence in education has been a topic of considerable public discussion.",
+        "The research {word} developed by the university team was published in a leading peer-reviewed journal.",
+        "The minister announced that the {word} of the new healthcare system would be reviewed next quarter.",
+        "Several analysts noted that the {word} of the company's operations had improved substantially over time.",
+        "The international {word} for sustainable development was formally endorsed by all participating nations.",
+        "The committee's {word} of the proposed amendments was thorough and took several weeks to complete.",
+        "The {word} of the electoral process remains a key priority for the independent oversight commission.",
     ]
 
     pairs = []
