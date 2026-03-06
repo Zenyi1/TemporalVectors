@@ -2,7 +2,6 @@
 
 > **Linear Representations for Temporal Knowledge Forecasting in Large Language Models**
 > Carlos Zenyi Gomez Aryoshi (52319406) -- University of Aberdeen
-> Supervisor: Dr. Wei Zhao | Timeline: W1 (Feb) -- W13 (May 2026)
 > Reference: Park et al., *The Linear Representation Hypothesis and the Geometry of Large Language Models*, ICML 2024.
 
 ## Hypothesis
