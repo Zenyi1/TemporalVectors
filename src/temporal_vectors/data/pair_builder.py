@@ -6,6 +6,7 @@ and applies quality filters to produce valid JSONL pair records.
 
 import logging
 import re
+from difflib import SequenceMatcher
 from pathlib import Path
 from typing import Any
 
@@ -18,6 +19,7 @@ MIN_TOKENS = 10
 MAX_TOKENS = 200
 MIN_CHANGE_RATIO = 0.05  # at least 5% of tokens must differ
 MAX_CHANGE_RATIO = 0.90  # at most 90% differ (otherwise it's a rewrite, not an edit)
+MAX_CHAR_SIMILARITY = 0.95  # reject pairs that are >95% identical at character level
 
 
 def _word_count(text: str) -> int:
@@ -108,6 +110,11 @@ def filter_pair(raw_pair: dict[str, Any]) -> bool:
 
     # Must not be identical
     if old.strip() == new.strip():
+        return False
+
+    # Reject near-duplicates at character level (catches single-char edits)
+    char_sim = SequenceMatcher(None, old, new).ratio()
+    if char_sim > MAX_CHAR_SIMILARITY:
         return False
 
     return True
