@@ -24,8 +24,17 @@ def make_steering_hook(
         A hook function compatible with register_forward_hook.
     """
 
-    def hook(module: nn.Module, input: tuple, output: tuple) -> tuple:
-        hidden_states = output[0]
+    def hook(module: nn.Module, input: tuple, output) -> tuple:
+        #unpack hidden states from tuple or bare tensor
+        if isinstance(output, tuple):
+            hidden_states = output[0]
+            rest = output[1:]
+        elif isinstance(output, torch.Tensor):
+            hidden_states = output
+            rest = None
+        else:
+            hidden_states = output[0]
+            rest = output[1:]
         steering = alpha * direction.to(hidden_states.device, dtype=hidden_states.dtype)
         if token_position is None:
             hidden_states = hidden_states + steering
@@ -33,7 +42,9 @@ def make_steering_hook(
             hidden_states[:, token_position, :] = (
                 hidden_states[:, token_position, :] + steering
             )
-        return (hidden_states,) + output[1:]
+        if rest is None:
+            return hidden_states
+        return (hidden_states,) + rest
 
     return hook
 
@@ -50,8 +61,9 @@ def make_capture_hook(storage: dict, layer_id: int) -> Callable:
         A hook function compatible with register_forward_hook.
     """
 
-    def hook(module: nn.Module, input: tuple, output: tuple) -> None:
-        storage[layer_id] = output[0].detach().cpu().float()
+    def hook(module: nn.Module, input: tuple, output) -> None:
+        hidden = output[0] if isinstance(output, tuple) else output
+        storage[layer_id] = hidden.detach().cpu().float()
 
     return hook
 

@@ -48,7 +48,7 @@ def load_model_and_tokenizer(
         model_name,
         cache_dir=cache_dir,
         device_map=device_map,
-        torch_dtype=torch_dtype,
+        dtype=torch_dtype,
     )
     model.eval()
 
