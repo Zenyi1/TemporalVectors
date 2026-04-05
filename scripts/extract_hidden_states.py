@@ -30,8 +30,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--pairs",
         type=Path,
+        nargs="+",
         required=True,
-        help="Path to JSONL pair file",
+        help="Path(s) to JSONL pair files",
     )
     parser.add_argument(
         "--layers",
@@ -65,14 +66,8 @@ def main() -> None:
     args = parse_args()
     seed_everything(SEED)
 
-    # Determine pair type from filename for output subdir
-    pair_type = args.pairs.stem.replace("_pairs", "")
-    output_dir = args.output_dir or HIDDEN_DIR / pair_type
-
-    logger.info("Pairs: %s", args.pairs)
     logger.info("Layers: %s", args.layers)
     logger.info("Batch size: %d", args.batch_size)
-    logger.info("Output: %s", output_dir)
 
     # Lazy import to avoid loading torch/model until args are parsed
     from temporal_vectors.analysis.hidden_states import HiddenStateExtractor
@@ -87,26 +82,27 @@ def main() -> None:
         layers=args.layers,
     )
 
-    logger.info("Starting extraction...")
-    result = extractor.extract_dataset(
-        pairs_path=args.pairs,
-        output_dir=output_dir,
-        batch_size=args.batch_size,
-        max_pairs=args.max_pairs,
-    )
+    for pairs_path in args.pairs:
+        pair_type = pairs_path.stem.replace("_pairs", "")
+        output_dir = args.output_dir or HIDDEN_DIR / pair_type
 
-    # Summary
-    logger.info("Extraction complete:")
-    for layer_idx, tensor in result.items():
-        logger.info("  Layer %d: %s", layer_idx, tensor.shape)
+        logger.info("Extracting: %s -> %s", pairs_path, output_dir)
+        result = extractor.extract_dataset(
+            pairs_path=pairs_path,
+            output_dir=output_dir,
+            batch_size=args.batch_size,
+            max_pairs=args.max_pairs,
+        )
 
-    # Sanity checks
-    for layer_idx, tensor in result.items():
-        if tensor.numel() > 0:
-            if torch.isnan(tensor).any():
-                logger.error("NaN detected in layer %d!", layer_idx)
-            if torch.isinf(tensor).any():
-                logger.error("Inf detected in layer %d!", layer_idx)
+        for layer_idx, tensor in result.items():
+            logger.info("  Layer %d: %s", layer_idx, tensor.shape)
+
+        for layer_idx, tensor in result.items():
+            if tensor.numel() > 0:
+                if torch.isnan(tensor).any():
+                    logger.error("NaN detected in layer %d!", layer_idx)
+                if torch.isinf(tensor).any():
+                    logger.error("Inf detected in layer %d!", layer_idx)
 
     logger.info("Done.")
 

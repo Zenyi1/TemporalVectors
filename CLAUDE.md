@@ -29,8 +29,8 @@ Core infrastructure is in place. All constants live in `config.py`; every script
 
 - `src/temporal_vectors/config.py` -- all paths, model params, thresholds
 - `src/temporal_vectors/utils/` -- `seed_everything()`, JSONL I/O, checkpointing, bootstrap CI, permutation tests
-- `src/temporal_vectors/models/loader.py` -- `load_model_and_tokenizer()` loads LLaMA in bfloat16 with auto device map
-- `src/temporal_vectors/models/hooks.py` -- `steer_model()` and `capture_hidden_states()` context managers for clean hook lifecycle
+- `src/temporal_vectors/models/loader.py` -- `load_model_and_tokenizer()` loads LLaMA in bfloat16, forces CUDA when available
+- `src/temporal_vectors/models/hooks.py` -- `steer_model()` and `capture_hidden_states()` context managers, compatible with transformers 5.x
 - `scripts/setup_project.py` -- run this to verify dirs + deps + GPU
 - `configs/default.yaml` / `configs/debug.yaml` -- production vs fast-iteration settings
 
@@ -71,15 +71,29 @@ Three counterfactual-pair datasets, all sharing a common JSONL schema:
 
 **Targets:** >= 500 natural, >= 300 synthetic, >= 200 control. No domain > 40% of natural pairs.
 
+### Phase 2 -- Hidden State Extraction (done)
+
+Per-layer hidden states extracted for every sentence in all three datasets using last-token pooling, float32 precision.
+
+- `src/temporal_vectors/analysis/hidden_states.py` -- `HiddenStateExtractor` class with batch processing, padding-aware pooling, checkpointing every 100 batches
+- `scripts/extract_hidden_states.py` -- CLI that accepts multiple pair files in one run
+- Output in `outputs/hidden_states/{pair_type}/layer_{L}.pt`, saved as `{"tensor": Tensor, "metadata": dict}`
+
+**Results:**
+
+| Dataset | Texts | Shape per layer | Layers | Total size |
+|---------|-------|-----------------|--------|------------|
+| Natural | 11,172 | (11172, 3072) | 4 | 524 MB |
+| Synthetic | 648 | (648, 3072) | 4 | 31 MB |
+| Control | 530 | (530, 3072) | 4 | 25 MB |
+
+All tensors validated: float32, no NaN, no Inf.
+
 ---
 
 ## What's Next
 
-### Phase 2 -- Hidden State Extraction (next up)
-
-Extract per-layer hidden states for every sentence. `HiddenStateExtractor` class in `analysis/hidden_states.py` with last-token pooling, batch processing, checkpointing. Output: `outputs/hidden_states/{pair_type}/layer_{L}.pt` tensors of shape `(N, 3072)`. Key: extract in float32 even though model loads in bfloat16.
-
-### Phase 3 -- Temporal Vector Extraction
+### Phase 3 -- Temporal Vector Extraction (next up)
 
 Compute `delta = h_new - h_old` for each pair, estimate a stable temporal direction (mean or PCA of deltas). Four linearity tests: parallelism (>0.7), additivity (<0.3 residual), scaling (>0.7), cross-domain (>0.5). Leave-one-out stability >0.6.
 
@@ -116,7 +130,7 @@ Linear/nonlinear variance decomposition, layer-wise analysis, domain breakdown, 
 python scripts/setup_project.py
 python scripts/fetch_wikipedia_pairs.py --config configs/default.yaml
 python scripts/generate_synthetic_pairs.py --config configs/default.yaml
-python scripts/extract_hidden_states.py --pairs data/processed/natural_pairs.jsonl --layers 7 14 21 27
+python scripts/extract_hidden_states.py --pairs data/processed/natural_pairs.jsonl data/processed/synthetic_pairs.jsonl data/processed/control_pairs.jsonl --layers 7 14 21 27
 python scripts/compute_temporal_vectors.py --layers 7 14 21 27
 python scripts/run_linearity_tests.py
 python scripts/compute_cip.py --layers 7 14 21 27
@@ -135,8 +149,9 @@ python scripts/run_forecasting.py --config configs/debug.yaml
 
 | Problem | Fix |
 |---------|-----|
-| CUDA OOM | Reduce `EXTRACTION_BATCH_SIZE` to 4 or 2 |
-| HF gated model error | `huggingface-cli login` + accept licence on model page |
+| CUDA OOM | Reduce `--batch-size` to 4 or 2 |
+| Model on CPU (slow) | Ensure laptop is plugged in (dGPU disabled on battery); check `torch.cuda.is_available()` |
+| HF gated model error | `python -c "from huggingface_hub import login; login()"` + accept licence on model page |
 | Wikipedia 429 | Increase `WIKI_RATE_LIMIT_SECONDS` to 2.0 |
 | NaN in covariance | Increase CIP regularisation to 1e-3; ensure float32 hidden states |
 | Import errors | `pip install -e .` from project root |

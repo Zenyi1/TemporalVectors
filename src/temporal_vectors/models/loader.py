@@ -43,13 +43,12 @@ def load_model_and_tokenizer(
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
 
-    logger.info("Loading model: %s (dtype=%s, device_map=%s)", model_name, torch_dtype, device_map)
+    logger.info("Loading model: %s (dtype=%s, device=cuda)", model_name, torch_dtype)
     model = AutoModelForCausalLM.from_pretrained(
         model_name,
         cache_dir=cache_dir,
-        device_map=device_map,
         dtype=torch_dtype,
-    )
+    ).to("cuda")
     model.eval()
 
     param_count = sum(p.numel() for p in model.parameters())
