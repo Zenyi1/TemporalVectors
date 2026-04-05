@@ -116,9 +116,9 @@ Temporal vector arithmetic: h_forecast = h_old + alpha * gamma (scaled by mean d
 
 - `src/temporal_vectors/analysis/forecasting.py` -- forecast functions, baselines, evaluation metrics
 - `scripts/run_forecasting.py` -- CLI for all pair types, alpha sweep, domain breakdown
-- Full results: `outputs/results/phase5_forecasting_results.md`
+- Full results: `outputs/results/phase5_forecasting_results.md`, `outputs/results/phase5_rigorous_results.md`
 
-**Key results:** Temporal vector beats identity for synthetic pairs at all layers (best a=0.5, +0.5% cosine). Identity wins for natural (synthetic direction doesn't transfer) and control (expected). Both massively beat random baseline. Best alpha = 0.5 everywhere.
+**Key results:** Delta-focused evaluation with bootstrap CIs and permutation tests. Temporal direction predicts synthetic deltas significantly (delta cos 0.37, p<0.0001, R^2=0.17). Control pairs mostly not significant (p=0.13, 0.47 at layers 14,21). Science/economics strongest domains (0.50+), geography/technology CIs cross zero. Natural pairs: significant but negligible effect size.
 
 ---
 
