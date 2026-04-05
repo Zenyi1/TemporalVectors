@@ -120,6 +120,10 @@ Temporal vector arithmetic: h_forecast = h_old + alpha * gamma (scaled by mean d
 
 **Key results:** Delta-focused evaluation with bootstrap CIs and permutation tests. Temporal direction predicts synthetic deltas significantly (delta cos 0.37, p<0.0001, R^2=0.17). Control pairs mostly not significant (p=0.13, 0.47 at layers 14,21). Science/economics strongest domains (0.50+), geography/technology CIs cross zero. Natural pairs: significant but negligible effect size.
 
+**Activation steering demo:** Adding the temporal vector at layer 14 during generation causally shifts model output forward in time (Trump->Biden, May->Johnson, pre-COVID->COVID awareness). One vector, no fine-tuning. Generalises from synthetic training pairs to unseen prompts. Alpha 1-2 produces coherent temporal shifts; alpha 10+ degrades output (linear approximation breaks down at large magnitudes). See `outputs/results/steering_demo_analysis.md`.
+
+- `scripts/demo_steering.py` -- steering demo script, saves outputs to JSON
+
 ---
 
 ## What's Next
