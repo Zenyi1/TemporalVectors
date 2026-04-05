@@ -98,17 +98,23 @@ Computed delta vectors (h_new - h_old) for all pairs, estimated temporal directi
 - Output: `outputs/vectors/{pair_type}/temporal_direction_layer_{L}.pt` + `linearity_results.pt`
 - Full results: `outputs/results/phase3_linearity_results.md`
 
-**Key results:** Synthetic pairs show clear temporal signal (parallelism 0.37) vs control (0.21) — meaningful separation. Natural pairs near zero (0.03) due to content noise. Economics/science domains strongest (~0.50). Direction stable across all layers and under resampling (LOO = 1.0). CIP analysis (Phase 4) expected to reveal stronger signal by weighting prediction-relevant dimensions.
+**Key results:** Synthetic pairs show clear temporal signal (parallelism 0.37) vs control (0.21) — meaningful separation. Natural pairs near zero (0.03) due to content noise. Economics/science domains strongest (~0.50). Direction stable across all layers and under resampling (LOO = 1.0).
+
+### Phase 4 -- Causal Inner Product (done)
+
+CIP analysis using Park et al.'s framework. Extracts unembedding matrix (lm_head), computes vocabulary covariance Sigma_V = W_U^T @ W_U.
+
+- `src/temporal_vectors/analysis/cip.py` -- `CausalInnerProduct` class with CIP cosine/norm/projection, batch operations, orthogonality test
+- `scripts/compute_cip.py` -- CLI that runs CIP analysis for all pair types + orthogonality test
+- Full results: `outputs/results/phase4_cip_results.md`
+
+**Key results:** CIP ≈ Euclidean (temporal info distributed, not concentrated in prediction-critical dimensions). Orthogonality passes all layers — temporal and non-temporal directions are causally separable (max |CIP_cos| = 0.122). This validates causal separability (objective 4).
 
 ---
 
 ## What's Next
 
-### Phase 4 -- Causal Inner Product (next up)
-
-`CausalInnerProduct` class using Park et al.'s framework. Vocabulary covariance `Sigma_V = W_U^T @ W_U`, regularised inverse for CIP cosine/norm/projection. Validates temporal direction is orthogonal to control concepts (|CIP_cos| < 0.2).
-
-### Phase 5 -- Forecasting
+### Phase 5 -- Forecasting (next up)
 
 `h_forecast = h(T) + alpha * gamma`. Sweep alpha over [0.5, 1.0, 1.5, 2.0]. Compare against baselines (identity, random direction, linear probe). Also: compositional forecasting (temporal + topic vectors), multi-step (`k * gamma`), and activation steering experiments.
 
