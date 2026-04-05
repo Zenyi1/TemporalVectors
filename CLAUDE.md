@@ -110,17 +110,23 @@ CIP analysis using Park et al.'s framework. Extracts unembedding matrix (lm_head
 
 **Key results:** CIP ≈ Euclidean (temporal info distributed, not concentrated in prediction-critical dimensions). Orthogonality passes all layers — temporal and non-temporal directions are causally separable (max |CIP_cos| = 0.122). This validates causal separability (objective 4).
 
+### Phase 5 -- Forecasting (done)
+
+Temporal vector arithmetic: h_forecast = h_old + alpha * gamma (scaled by mean delta norm). Compared against identity and random baselines.
+
+- `src/temporal_vectors/analysis/forecasting.py` -- forecast functions, baselines, evaluation metrics
+- `scripts/run_forecasting.py` -- CLI for all pair types, alpha sweep, domain breakdown
+- Full results: `outputs/results/phase5_forecasting_results.md`
+
+**Key results:** Temporal vector beats identity for synthetic pairs at all layers (best a=0.5, +0.5% cosine). Identity wins for natural (synthetic direction doesn't transfer) and control (expected). Both massively beat random baseline. Best alpha = 0.5 everywhere.
+
 ---
 
 ## What's Next
 
-### Phase 5 -- Forecasting (next up)
+### Phase 6 -- Analysis & Ablations (next up)
 
-`h_forecast = h(T) + alpha * gamma`. Sweep alpha over [0.5, 1.0, 1.5, 2.0]. Compare against baselines (identity, random direction, linear probe). Also: compositional forecasting (temporal + topic vectors), multi-step (`k * gamma`), and activation steering experiments.
-
-### Phase 6 -- Analysis & Ablations
-
-Linear/nonlinear variance decomposition, layer-wise analysis, domain breakdown, ablations (dataset size, pair type, pooling, direction method), CIP vs Euclidean comparison. All with bootstrap CIs and permutation tests (p < 0.05).
+Statistical significance tests (bootstrap CIs, permutation tests), natural pair breakdown by change type, ablations (dataset size, direction method), variance decomposition. All with p < 0.05.
 
 ### Phase 7 -- Thesis Figures
 
