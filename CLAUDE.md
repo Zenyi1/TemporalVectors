@@ -123,6 +123,9 @@ Temporal vector arithmetic: h_forecast = h_old + alpha * gamma (scaled by mean d
 **Activation steering demo:** Adding the temporal vector at layer 14 during generation causally shifts model output forward in time (Trump->Biden, May->Johnson, pre-COVID->COVID awareness). One vector, no fine-tuning. Generalises from synthetic training pairs to unseen prompts. Alpha 1-2 produces coherent temporal shifts; alpha 10+ degrades output (linear approximation breaks down at large magnitudes). See `outputs/results/steering_demo_analysis.md`.
 
 - `scripts/demo_steering.py` -- steering demo script, saves outputs to JSON
+- `scripts/demo_temporal_walk.py` -- alpha sweep on neutral prompts, tests continuous temporal axis
+
+**Temporal walk:** Sweeping alpha from -10 to +10 on date-free prompts reveals the vector encodes a continuous temporal axis. iPhone walks forward (5→5S→6S→13), Olympics walks backward (Rio→London→Beijing→Athens) — both in perfect chronological order. The sign is domain-dependent: the vector captures a temporal dimension, not a universal forward direction. "As of YEAR" prompts resist steering (explicit date anchors override the vector at low alpha). See `outputs/results/steering_demo_analysis.md`.
 
 ---
 
