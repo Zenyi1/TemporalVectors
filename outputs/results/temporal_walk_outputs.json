@@ -1,0 +1,717 @@
+[
+  {
+    "prompt": "The current president of the United States is",
+    "expected_sequence": [
+      "Bush",
+      "Obama",
+      "Trump",
+      "Biden"
+    ],
+    "domain": "politics",
+    "outputs": {
+      "-10.0": {
+        "full_text": "The current president of the United States is Donald Trump. He is a Republican. He is a billionaire. He is a real estate developer. He is a former reality TV star. He is a former host of The Apprentice. He is a",
+        "generated": "Donald Trump. He is a Republican. He is a billionaire. He is a real estate developer. He is a former reality TV star. He is a former host of The Apprentice. He is a",
+        "found_items": [
+          "Trump"
+        ]
+      },
+      "-5.0": {
+        "full_text": "The current president of the United States is Donald Trump. He is a Republican. He is a businessman. He is a reality TV star. He is a former reality TV star. He is a former reality TV star who is a businessman.",
+        "generated": "Donald Trump. He is a Republican. He is a businessman. He is a reality TV star. He is a former reality TV star. He is a former reality TV star who is a businessman.",
+        "found_items": [
+          "Trump"
+        ]
+      },
+      "-3.0": {
+        "full_text": "The current president of the United States is Donald Trump. He is a Republican. He is a businessman. He is a reality TV star. He is a former host of The Apprentice. He is a former host of The Celebrity Apprentice. He",
+        "generated": "Donald Trump. He is a Republican. He is a businessman. He is a reality TV star. He is a former host of The Apprentice. He is a former host of The Celebrity Apprentice. He",
+        "found_items": [
+          "Trump"
+        ]
+      },
+      "-2.0": {
+        "full_text": "The current president of the United States is Donald Trump. He is a Republican and was elected in 2016. He is the 45th president of the United States. He is the first president to be elected without having served in the",
+        "generated": "Donald Trump. He is a Republican and was elected in 2016. He is the 45th president of the United States. He is the first president to be elected without having served in the",
+        "found_items": [
+          "Trump"
+        ]
+      },
+      "-1.0": {
+        "full_text": "The current president of the United States is Donald Trump. He is a Republican. He was elected in 2016. He is the 45th president of the United States. He is the first president to be elected without having served in",
+        "generated": "Donald Trump. He is a Republican. He was elected in 2016. He is the 45th president of the United States. He is the first president to be elected without having served in",
+        "found_items": [
+          "Trump"
+        ]
+      },
+      "0.0": {
+        "full_text": "The current president of the United States is Donald Trump. He was elected in 2016 and is currently serving his second term. He is the 45th president of the United States. Before he became president, he was a successful businessman",
+        "generated": "Donald Trump. He was elected in 2016 and is currently serving his second term. He is the 45th president of the United States. Before he became president, he was a successful businessman",
+        "found_items": [
+          "Trump"
+        ]
+      },
+      "0.5": {
+        "full_text": "The current president of the United States is Donald Trump. He was elected in 2016 and is currently serving his second term. He is the 45th president of the United States. Before he became president, he was a successful businessman",
+        "generated": "Donald Trump. He was elected in 2016 and is currently serving his second term. He is the 45th president of the United States. Before he became president, he was a successful businessman",
+        "found_items": [
+          "Trump"
+        ]
+      },
+      "1.0": {
+        "full_text": "The current president of the United States is Donald Trump. He was elected in 2016 and re-elected in 2020. He is the 45th president of the United States. He is the first president to be impeached twice",
+        "generated": "Donald Trump. He was elected in 2016 and re-elected in 2020. He is the 45th president of the United States. He is the first president to be impeached twice",
+        "found_items": [
+          "Trump"
+        ]
+      },
+      "1.5": {
+        "full_text": "The current president of the United States is a man who has been in office for less than a year. He has been in office for less than a year, but he has already made a significant impact on the world. He has been able",
+        "generated": "a man who has been in office for less than a year. He has been in office for less than a year, but he has already made a significant impact on the world. He has been able",
+        "found_items": []
+      },
+      "2.0": {
+        "full_text": "The current president of the United States is a man who has been in office for less than a year. He has been in office for less than a year, and he has already done more damage to the United States than any other president in",
+        "generated": "a man who has been in office for less than a year. He has been in office for less than a year, and he has already done more damage to the United States than any other president in",
+        "found_items": []
+      },
+      "3.0": {
+        "full_text": "The current president of the United States is a man who has been in office for less than a year. He has been in office for less than a year, and he has been in office for less than a year. He has been in",
+        "generated": "a man who has been in office for less than a year. He has been in office for less than a year, and he has been in office for less than a year. He has been in",
+        "found_items": []
+      },
+      "5.0": {
+        "full_text": "The current president of the United States is a man who has been in office for 4 years. He was elected to office in 2016, and he was re-elected in 2020. He is the first president to be re",
+        "generated": "a man who has been in office for 4 years. He was elected to office in 2016, and he was re-elected in 2020. He is the first president to be re",
+        "found_items": []
+      },
+      "10.0": {
+        "full_text": "The current president of the United States is a man who was elected to office with the support of the majority of the American people. He was not elected by the majority of the American people, but by the majority of the American people who were",
+        "generated": "a man who was elected to office with the support of the majority of the American people. He was not elected by the majority of the American people, but by the majority of the American people who were",
+        "found_items": []
+      }
+    }
+  },
+  {
+    "prompt": "Today, the prime minister of the United Kingdom is",
+    "expected_sequence": [
+      "Blair",
+      "Brown",
+      "Cameron",
+      "May",
+      "Johnson",
+      "Starmer"
+    ],
+    "domain": "politics",
+    "outputs": {
+      "-10.0": {
+        "full_text": "Today, the prime minister of the United Kingdom is expected to announce a new plan to tackle the housing crisis. The government has already announced that the country’s housing market is a “national priority” and that the government is looking to build 200,",
+        "generated": "expected to announce a new plan to tackle the housing crisis. The government has already announced that the country’s housing market is a “national priority” and that the government is looking to build 200,",
+        "found_items": []
+      },
+      "-5.0": {
+        "full_text": "Today, the prime minister of the United Kingdom is expected to announce a new plan to tackle the housing crisis. The government is expected to announce a new plan to build 200,000 new homes a year, which would be the biggest increase in house",
+        "generated": "expected to announce a new plan to tackle the housing crisis. The government is expected to announce a new plan to build 200,000 new homes a year, which would be the biggest increase in house",
+        "found_items": []
+      },
+      "-3.0": {
+        "full_text": "Today, the prime minister of the United Kingdom is expected to announce a new plan to tackle the housing crisis. The government has been under pressure to act after a report by the National Audit Office (NAO) found that the current system is failing to",
+        "generated": "expected to announce a new plan to tackle the housing crisis. The government has been under pressure to act after a report by the National Audit Office (NAO) found that the current system is failing to",
+        "found_items": []
+      },
+      "-2.0": {
+        "full_text": "Today, the prime minister of the United Kingdom is expected to announce a new plan to tackle the housing crisis. The government has been under pressure to do something about the lack of affordable housing in the country, and the prime minister has promised to do something",
+        "generated": "expected to announce a new plan to tackle the housing crisis. The government has been under pressure to do something about the lack of affordable housing in the country, and the prime minister has promised to do something",
+        "found_items": []
+      },
+      "-1.0": {
+        "full_text": "Today, the prime minister of the United Kingdom is visiting the United States. He is the first foreign leader to visit the United States since the beginning of the coronavirus pandemic. The prime minister is expected to meet with President Trump and other top officials. The",
+        "generated": "visiting the United States. He is the first foreign leader to visit the United States since the beginning of the coronavirus pandemic. The prime minister is expected to meet with President Trump and other top officials. The",
+        "found_items": []
+      },
+      "0.0": {
+        "full_text": "Today, the prime minister of the United Kingdom is visiting the United States. He is the first foreign leader to visit the United States since the beginning of the COVID-19 pandemic. The prime minister is visiting to discuss the United Kingdom’s exit from the",
+        "generated": "visiting the United States. He is the first foreign leader to visit the United States since the beginning of the COVID-19 pandemic. The prime minister is visiting to discuss the United Kingdom’s exit from the",
+        "found_items": []
+      },
+      "0.5": {
+        "full_text": "Today, the prime minister of the United Kingdom is visiting the United States. He is the first foreign leader to visit the United States since the beginning of the COVID-19 pandemic. The prime minister is visiting to discuss the United Kingdom’s exit from the",
+        "generated": "visiting the United States. He is the first foreign leader to visit the United States since the beginning of the COVID-19 pandemic. The prime minister is visiting to discuss the United Kingdom’s exit from the",
+        "found_items": []
+      },
+      "1.0": {
+        "full_text": "Today, the prime minister of the United Kingdom is visiting the United States. He is the first foreign leader to visit the United States since the inauguration of President Trump. The prime minister is a strong supporter of the United States and a strong supporter of President",
+        "generated": "visiting the United States. He is the first foreign leader to visit the United States since the inauguration of President Trump. The prime minister is a strong supporter of the United States and a strong supporter of President",
+        "found_items": []
+      },
+      "1.5": {
+        "full_text": "Today, the prime minister of the United Kingdom is in the United States. He is here to meet with President Obama and to attend the United Nations General Assembly. He is also here to meet with the American people. He is here to talk about the",
+        "generated": "in the United States. He is here to meet with President Obama and to attend the United Nations General Assembly. He is also here to meet with the American people. He is here to talk about the",
+        "found_items": []
+      },
+      "2.0": {
+        "full_text": "Today, the prime minister of the United Kingdom is in the United States. He is here to meet with President Obama and to attend the United Nations General Assembly. He is also here to meet with the American people. He is here to talk about the",
+        "generated": "in the United States. He is here to meet with President Obama and to attend the United Nations General Assembly. He is also here to meet with the American people. He is here to talk about the",
+        "found_items": []
+      },
+      "3.0": {
+        "full_text": "Today, the prime minister of the United Kingdom is in the United States, and he is meeting with President Obama. The prime minister is a man named David Cameron, and he is a member of the Conservative Party. The Conservative Party is the party that",
+        "generated": "in the United States, and he is meeting with President Obama. The prime minister is a man named David Cameron, and he is a member of the Conservative Party. The Conservative Party is the party that",
+        "found_items": [
+          "Cameron"
+        ]
+      },
+      "5.0": {
+        "full_text": "Today, the prime minister of the United Kingdom is in the House of Commons, and the House of Lords, to answer questions on the government’s response to the coronavirus pandemic. The prime minister was asked about the government’s response to the pandemic, and",
+        "generated": "in the House of Commons, and the House of Lords, to answer questions on the government’s response to the coronavirus pandemic. The prime minister was asked about the government’s response to the pandemic, and",
+        "found_items": []
+      },
+      "10.0": {
+        "full_text": "Today, the prime minister of the United Kingdom is the only head of government who could be described as a “prime minister” in the sense that it was the prime minister of the United Kingdom that was the prime minister of the United Kingdom. The prime",
+        "generated": "the only head of government who could be described as a “prime minister” in the sense that it was the prime minister of the United Kingdom that was the prime minister of the United Kingdom. The prime",
+        "found_items": []
+      }
+    }
+  },
+  {
+    "prompt": "The latest iPhone model is the iPhone",
+    "expected_sequence": [
+      "5",
+      "6",
+      "7",
+      "8",
+      "X",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16"
+    ],
+    "domain": "technology",
+    "outputs": {
+      "-10.0": {
+        "full_text": "The latest iPhone model is the iPhone 5. The iPhone 5 is the latest in a line of Apple’s iPhone models. The iPhone 5 is expected to be the next generation of the iPhone. The iPhone 5 is expected",
+        "generated": "5. The iPhone 5 is the latest in a line of Apple’s iPhone models. The iPhone 5 is expected to be the next generation of the iPhone. The iPhone 5 is expected",
+        "found_items": [
+          "5",
+          "X"
+        ]
+      },
+      "-5.0": {
+        "full_text": "The latest iPhone model is the iPhone 5. The iPhone 5 is the latest in a line of Apple’s iPhone models. The iPhone 5 is the fifth generation of the iPhone. The iPhone 5 is a smartphone that is",
+        "generated": "5. The iPhone 5 is the latest in a line of Apple’s iPhone models. The iPhone 5 is the fifth generation of the iPhone. The iPhone 5 is a smartphone that is",
+        "found_items": [
+          "5"
+        ]
+      },
+      "-3.0": {
+        "full_text": "The latest iPhone model is the iPhone 5. It is the fifth generation of the iPhone. The iPhone 5 is the first iPhone to be released with a larger screen. The iPhone 5 is also the first iPhone to be released",
+        "generated": "5. It is the fifth generation of the iPhone. The iPhone 5 is the first iPhone to be released with a larger screen. The iPhone 5 is also the first iPhone to be released",
+        "found_items": [
+          "5"
+        ]
+      },
+      "-2.0": {
+        "full_text": "The latest iPhone model is the iPhone 5S. It is the latest model of the iPhone and is the successor to the iPhone 5. The iPhone 5S is the first iPhone to be released with a fingerprint sensor. The",
+        "generated": "5S. It is the latest model of the iPhone and is the successor to the iPhone 5. The iPhone 5S is the first iPhone to be released with a fingerprint sensor. The",
+        "found_items": [
+          "5"
+        ]
+      },
+      "-1.0": {
+        "full_text": "The latest iPhone model is the iPhone 5S. It is the latest model of the iPhone series. It is the successor of the iPhone 5. The iPhone 5S is the 6th generation of the iPhone series.",
+        "generated": "5S. It is the latest model of the iPhone series. It is the successor of the iPhone 5. The iPhone 5S is the 6th generation of the iPhone series.",
+        "found_items": [
+          "5",
+          "6"
+        ]
+      },
+      "0.0": {
+        "full_text": "The latest iPhone model is the iPhone 5S. It is the latest model of the iPhone series. It is the 5th generation of the iPhone series. It is the successor of the iPhone 5. It is the first",
+        "generated": "5S. It is the latest model of the iPhone series. It is the 5th generation of the iPhone series. It is the successor of the iPhone 5. It is the first",
+        "found_items": [
+          "5"
+        ]
+      },
+      "0.5": {
+        "full_text": "The latest iPhone model is the iPhone 6S. It is the 6th generation of the iPhone. It was released on September 25, 2015. It is the successor to the iPhone 6. The iPhone ",
+        "generated": "6S. It is the 6th generation of the iPhone. It was released on September 25, 2015. It is the successor to the iPhone 6. The iPhone",
+        "found_items": [
+          "5",
+          "6",
+          "15"
+        ]
+      },
+      "1.0": {
+        "full_text": "The latest iPhone model is the iPhone 6S. It is the 6th generation of the iPhone. It was released on September 25, 2015. It is the successor to the iPhone 6. The iPhone ",
+        "generated": "6S. It is the 6th generation of the iPhone. It was released on September 25, 2015. It is the successor to the iPhone 6. The iPhone",
+        "found_items": [
+          "5",
+          "6",
+          "15"
+        ]
+      },
+      "1.5": {
+        "full_text": "The latest iPhone model is the iPhone 6S. It was released in September 2015. It is the 6th generation of the iPhone. It has a 4.7-inch screen and a 5.5-inch",
+        "generated": "6S. It was released in September 2015. It is the 6th generation of the iPhone. It has a 4.7-inch screen and a 5.5-inch",
+        "found_items": [
+          "5",
+          "6",
+          "7",
+          "15"
+        ]
+      },
+      "2.0": {
+        "full_text": "The latest iPhone model is the iPhone 6S. It was released in September 2015 and is still available for purchase. The iPhone 6S is a great phone, but it has some drawbacks. One of the biggest drawbacks",
+        "generated": "6S. It was released in September 2015 and is still available for purchase. The iPhone 6S is a great phone, but it has some drawbacks. One of the biggest drawbacks",
+        "found_items": [
+          "5",
+          "6",
+          "15"
+        ]
+      },
+      "3.0": {
+        "full_text": "The latest iPhone model is the iPhone 13 Pro Max. It has a 6.7-inch display and a 120Hz refresh rate. It also has a 12MP camera and a 12MP selfie camera. The battery",
+        "generated": "13 Pro Max. It has a 6.7-inch display and a 120Hz refresh rate. It also has a 12MP camera and a 12MP selfie camera. The battery",
+        "found_items": [
+          "6",
+          "7",
+          "X",
+          "12",
+          "13"
+        ]
+      },
+      "5.0": {
+        "full_text": "The latest iPhone model is the iPhone 13 Pro Max. It has a 6.7-inch display and a 120Hz refresh rate. It also has a 12MP camera and a 12MP selfie camera. The battery",
+        "generated": "13 Pro Max. It has a 6.7-inch display and a 120Hz refresh rate. It also has a 12MP camera and a 12MP selfie camera. The battery",
+        "found_items": [
+          "6",
+          "7",
+          "X",
+          "12",
+          "13"
+        ]
+      },
+      "10.0": {
+        "full_text": "The latest iPhone model is the iPhone 13, which was released in 2021. It has a 1.00 GB RAM size, and CPU speed of 1.00 GHz for the processor and graphics speed of 1",
+        "generated": "13, which was released in 2021. It has a 1.00 GB RAM size, and CPU speed of 1.00 GHz for the processor and graphics speed of 1",
+        "found_items": [
+          "13"
+        ]
+      }
+    }
+  },
+  {
+    "prompt": "Right now, the chancellor of Germany is",
+    "expected_sequence": [
+      "Merkel",
+      "Scholz"
+    ],
+    "domain": "politics",
+    "outputs": {
+      "-10.0": {
+        "full_text": "Right now, the chancellor of Germany is saying that the country’s economy is in a “deep recession” and that the country’s economy is in a “deep recession.”\nThe chancellor, Angela Merkel, is speaking at a news conference in Berlin",
+        "generated": "saying that the country’s economy is in a “deep recession” and that the country’s economy is in a “deep recession.”\nThe chancellor, Angela Merkel, is speaking at a news conference in Berlin",
+        "found_items": [
+          "Merkel"
+        ]
+      },
+      "-5.0": {
+        "full_text": "Right now, the chancellor of Germany is in the United States. He is there to talk about the future of the European Union. The chancellor is Angela Merkel. She is the leader of Germany. Germany is the biggest country in Europe. The",
+        "generated": "in the United States. He is there to talk about the future of the European Union. The chancellor is Angela Merkel. She is the leader of Germany. Germany is the biggest country in Europe. The",
+        "found_items": [
+          "Merkel"
+        ]
+      },
+      "-3.0": {
+        "full_text": "Right now, the chancellor of Germany is Angela Merkel. She is a woman. She is a Christian. She is a mother. She is a politician. She is a leader. She is a German. She is a European. She is",
+        "generated": "Angela Merkel. She is a woman. She is a Christian. She is a mother. She is a politician. She is a leader. She is a German. She is a European. She is",
+        "found_items": [
+          "Merkel"
+        ]
+      },
+      "-2.0": {
+        "full_text": "Right now, the chancellor of Germany is Angela Merkel. She is a woman. She is a Christian. She is a mother. She is a politician. She is a leader. She is a German. She is a European. She is",
+        "generated": "Angela Merkel. She is a woman. She is a Christian. She is a mother. She is a politician. She is a leader. She is a German. She is a European. She is",
+        "found_items": [
+          "Merkel"
+        ]
+      },
+      "-1.0": {
+        "full_text": "Right now, the chancellor of Germany is Angela Merkel. She is a woman. She is a Christian. She is a mother. She is a politician. She is a leader. She is a German. She is a European. She is",
+        "generated": "Angela Merkel. She is a woman. She is a Christian. She is a mother. She is a politician. She is a leader. She is a German. She is a European. She is",
+        "found_items": [
+          "Merkel"
+        ]
+      },
+      "0.0": {
+        "full_text": "Right now, the chancellor of Germany is Angela Merkel. She is a woman. She is a Christian. She is a mother. She is a scientist. She is a politician. She is a leader. She is a role model. She",
+        "generated": "Angela Merkel. She is a woman. She is a Christian. She is a mother. She is a scientist. She is a politician. She is a leader. She is a role model. She",
+        "found_items": [
+          "Merkel"
+        ]
+      },
+      "0.5": {
+        "full_text": "Right now, the chancellor of Germany is Angela Merkel. She is a very powerful woman. She is the leader of the German government. She is also the leader of the Christian Democratic Union (CDU). The CDU is a political party",
+        "generated": "Angela Merkel. She is a very powerful woman. She is the leader of the German government. She is also the leader of the Christian Democratic Union (CDU). The CDU is a political party",
+        "found_items": [
+          "Merkel"
+        ]
+      },
+      "1.0": {
+        "full_text": "Right now, the chancellor of Germany is Angela Merkel. She is a woman. She is a Christian. She is a mother. She is a scientist. She is a politician. She is a leader. She is a German. She is",
+        "generated": "Angela Merkel. She is a woman. She is a Christian. She is a mother. She is a scientist. She is a politician. She is a leader. She is a German. She is",
+        "found_items": [
+          "Merkel"
+        ]
+      },
+      "1.5": {
+        "full_text": "Right now, the chancellor of Germany is Angela Merkel. She is a woman. She is a Christian. She is a mother. She is a scientist. She is a politician. She is a leader. She is a German. She is",
+        "generated": "Angela Merkel. She is a woman. She is a Christian. She is a mother. She is a scientist. She is a politician. She is a leader. She is a German. She is",
+        "found_items": [
+          "Merkel"
+        ]
+      },
+      "2.0": {
+        "full_text": "Right now, the chancellor of Germany is Angela Merkel. She is a woman. She is a Christian. She is a mother. She is a scientist. She is a politician. She is a leader. She is a German. She is",
+        "generated": "Angela Merkel. She is a woman. She is a Christian. She is a mother. She is a scientist. She is a politician. She is a leader. She is a German. She is",
+        "found_items": [
+          "Merkel"
+        ]
+      },
+      "3.0": {
+        "full_text": "Right now, the chancellor of Germany is a woman. Angela Merkel is the first woman to hold that position. She was elected in 2005 and re-elected in 2009. She is a member of the Christian Democratic Union (CD",
+        "generated": "a woman. Angela Merkel is the first woman to hold that position. She was elected in 2005 and re-elected in 2009. She is a member of the Christian Democratic Union (CD",
+        "found_items": [
+          "Merkel"
+        ]
+      },
+      "5.0": {
+        "full_text": "Right now, the chancellor of Germany is a woman. She was elected in 2005, and she was re-elected in 2009. She is Angela Merkel. She is a very good chancellor. She is a very good chancellor because",
+        "generated": "a woman. She was elected in 2005, and she was re-elected in 2009. She is Angela Merkel. She is a very good chancellor. She is a very good chancellor because",
+        "found_items": [
+          "Merkel"
+        ]
+      },
+      "10.0": {
+        "full_text": "Right now, the chancellor of Germany is a woman, and the president of the United States was a woman. The first woman to serve as the president of the United States was in 1980, and the first woman to serve as the",
+        "generated": "a woman, and the president of the United States was a woman. The first woman to serve as the president of the United States was in 1980, and the first woman to serve as the",
+        "found_items": []
+      }
+    }
+  },
+  {
+    "prompt": "The current richest person in the world is",
+    "expected_sequence": [
+      "Gates",
+      "Bezos",
+      "Musk"
+    ],
+    "domain": "economics",
+    "outputs": {
+      "-10.0": {
+        "full_text": "The current richest person in the world is Jeff Bezos, the founder of Amazon. Bezos is worth an estimated $100 billion, according to a report from Bloomberg. The report comes as the billionaire is reportedly planning to sell a large chunk",
+        "generated": "Jeff Bezos, the founder of Amazon. Bezos is worth an estimated $100 billion, according to a report from Bloomberg. The report comes as the billionaire is reportedly planning to sell a large chunk",
+        "found_items": [
+          "Bezos"
+        ]
+      },
+      "-5.0": {
+        "full_text": "The current richest person in the world is Jeff Bezos, the founder of Amazon. He is worth an estimated $110 billion, according to Forbes. Bezos is the founder and CEO of Amazon, the world’s largest online retailer. He",
+        "generated": "Jeff Bezos, the founder of Amazon. He is worth an estimated $110 billion, according to Forbes. Bezos is the founder and CEO of Amazon, the world’s largest online retailer. He",
+        "found_items": [
+          "Bezos"
+        ]
+      },
+      "-3.0": {
+        "full_text": "The current richest person in the world is Jeff Bezos, the founder of Amazon. He is worth $112 billion, according to Forbes. Bezos is the founder of Amazon, the world’s largest online retailer. He is also the founder",
+        "generated": "Jeff Bezos, the founder of Amazon. He is worth $112 billion, according to Forbes. Bezos is the founder of Amazon, the world’s largest online retailer. He is also the founder",
+        "found_items": [
+          "Bezos"
+        ]
+      },
+      "-2.0": {
+        "full_text": "The current richest person in the world is Jeff Bezos, the founder of Amazon. He is worth $137 billion, according to Forbes. Bezos is followed by Bill Gates, the founder of Microsoft, who is worth $90 billion.",
+        "generated": "Jeff Bezos, the founder of Amazon. He is worth $137 billion, according to Forbes. Bezos is followed by Bill Gates, the founder of Microsoft, who is worth $90 billion.",
+        "found_items": [
+          "Gates",
+          "Bezos"
+        ]
+      },
+      "-1.0": {
+        "full_text": "The current richest person in the world is Jeff Bezos, the founder of Amazon. He is worth $137 billion, according to Forbes. Bezos is followed by Bill Gates, the founder of Microsoft, who is worth $90 billion.",
+        "generated": "Jeff Bezos, the founder of Amazon. He is worth $137 billion, according to Forbes. Bezos is followed by Bill Gates, the founder of Microsoft, who is worth $90 billion.",
+        "found_items": [
+          "Gates",
+          "Bezos"
+        ]
+      },
+      "0.0": {
+        "full_text": "The current richest person in the world is Jeff Bezos, the founder of Amazon. He has a net worth of $137 billion. The second richest person in the world is Bill Gates, the founder of Microsoft. He has a net worth",
+        "generated": "Jeff Bezos, the founder of Amazon. He has a net worth of $137 billion. The second richest person in the world is Bill Gates, the founder of Microsoft. He has a net worth",
+        "found_items": [
+          "Gates",
+          "Bezos"
+        ]
+      },
+      "0.5": {
+        "full_text": "The current richest person in the world is Jeff Bezos, the founder of Amazon. He has a net worth of $137 billion. The second richest person in the world is Bill Gates, the founder of Microsoft. He has a net worth",
+        "generated": "Jeff Bezos, the founder of Amazon. He has a net worth of $137 billion. The second richest person in the world is Bill Gates, the founder of Microsoft. He has a net worth",
+        "found_items": [
+          "Gates",
+          "Bezos"
+        ]
+      },
+      "1.0": {
+        "full_text": "The current richest person in the world is Jeff Bezos, the founder of Amazon. He has a net worth of $137 billion. The second richest person in the world is Bill Gates, the founder of Microsoft. He has a net worth",
+        "generated": "Jeff Bezos, the founder of Amazon. He has a net worth of $137 billion. The second richest person in the world is Bill Gates, the founder of Microsoft. He has a net worth",
+        "found_items": [
+          "Gates",
+          "Bezos"
+        ]
+      },
+      "1.5": {
+        "full_text": "The current richest person in the world is Jeff Bezos, the founder of Amazon. He has a net worth of $137 billion. The second richest person in the world is Bill Gates, the founder of Microsoft. He has a net worth",
+        "generated": "Jeff Bezos, the founder of Amazon. He has a net worth of $137 billion. The second richest person in the world is Bill Gates, the founder of Microsoft. He has a net worth",
+        "found_items": [
+          "Gates",
+          "Bezos"
+        ]
+      },
+      "2.0": {
+        "full_text": "The current richest person in the world is Jeff Bezos, the founder of Amazon. He has a net worth of $137 billion. The second richest person in the world is Bill Gates, the founder of Microsoft. He has a net worth",
+        "generated": "Jeff Bezos, the founder of Amazon. He has a net worth of $137 billion. The second richest person in the world is Bill Gates, the founder of Microsoft. He has a net worth",
+        "found_items": [
+          "Gates",
+          "Bezos"
+        ]
+      },
+      "3.0": {
+        "full_text": "The current richest person in the world is Jeff Bezos, the founder of Amazon. He has a net worth of $137 billion. The second richest person in the world is Bill Gates, the founder of Microsoft. He has a net worth",
+        "generated": "Jeff Bezos, the founder of Amazon. He has a net worth of $137 billion. The second richest person in the world is Bill Gates, the founder of Microsoft. He has a net worth",
+        "found_items": [
+          "Gates",
+          "Bezos"
+        ]
+      },
+      "5.0": {
+        "full_text": "The current richest person in the world is Bill Gates, with a net worth of $94.6 billion. He is followed by Jeff Bezos, with a net worth of $93.4 billion, and Warren Buffett, with a net",
+        "generated": "Bill Gates, with a net worth of $94.6 billion. He is followed by Jeff Bezos, with a net worth of $93.4 billion, and Warren Buffett, with a net",
+        "found_items": [
+          "Gates",
+          "Bezos"
+        ]
+      },
+      "10.0": {
+        "full_text": "The current richest person in the world is Bill Gates, with a net worth of $93.8 billion. The second richest person in the world was Warren Buffett, with a net worth of $91.3 billion. The third richest person",
+        "generated": "Bill Gates, with a net worth of $93.8 billion. The second richest person in the world was Warren Buffett, with a net worth of $91.3 billion. The third richest person",
+        "found_items": [
+          "Gates"
+        ]
+      }
+    }
+  },
+  {
+    "prompt": "The most recent Summer Olympics were held in",
+    "expected_sequence": [
+      "Beijing",
+      "London",
+      "Rio",
+      "Tokyo",
+      "Paris"
+    ],
+    "domain": "sports",
+    "outputs": {
+      "-10.0": {
+        "full_text": "The most recent Summer Olympics were held in Rio de Janeiro, Brazil. The games are expected to be the most expensive ever. The games are expected to cost $5 billion. The games are expected to cost $5 billion. The games are",
+        "generated": "Rio de Janeiro, Brazil. The games are expected to be the most expensive ever. The games are expected to cost $5 billion. The games are expected to cost $5 billion. The games are",
+        "found_items": [
+          "Rio"
+        ]
+      },
+      "-5.0": {
+        "full_text": "The most recent Summer Olympics were held in Rio de Janeiro, Brazil. The games are expected to be the most expensive ever. The games are expected to cost $10 billion. The games are expected to be the most expensive ever. The games",
+        "generated": "Rio de Janeiro, Brazil. The games are expected to be the most expensive ever. The games are expected to cost $10 billion. The games are expected to be the most expensive ever. The games",
+        "found_items": [
+          "Rio"
+        ]
+      },
+      "-3.0": {
+        "full_text": "The most recent Summer Olympics were held in Rio de Janeiro, Brazil. The games are held every four years and are the largest sporting event in the world. The Olympics are a time for athletes from all over the world to come together and compete",
+        "generated": "Rio de Janeiro, Brazil. The games are held every four years and are the largest sporting event in the world. The Olympics are a time for athletes from all over the world to come together and compete",
+        "found_items": [
+          "Rio"
+        ]
+      },
+      "-2.0": {
+        "full_text": "The most recent Summer Olympics were held in Rio de Janeiro, Brazil. The Olympics are a time when the world’s best athletes come together to compete in a variety of sports. The Olympics are also a time when the world’s best athletes come",
+        "generated": "Rio de Janeiro, Brazil. The Olympics are a time when the world’s best athletes come together to compete in a variety of sports. The Olympics are also a time when the world’s best athletes come",
+        "found_items": [
+          "Rio"
+        ]
+      },
+      "-1.0": {
+        "full_text": "The most recent Summer Olympics were held in Rio de Janeiro, Brazil. The Olympics are a time for athletes from all over the world to come together and compete in a variety of sports. The Olympics are also a time for people to come together",
+        "generated": "Rio de Janeiro, Brazil. The Olympics are a time for athletes from all over the world to come together and compete in a variety of sports. The Olympics are also a time for people to come together",
+        "found_items": [
+          "Rio"
+        ]
+      },
+      "0.0": {
+        "full_text": "The most recent Summer Olympics were held in Rio de Janeiro, Brazil. The Olympics are a time when the world comes together to celebrate the best of the best in sports. The Olympics are also a time when the world comes together to celebrate the",
+        "generated": "Rio de Janeiro, Brazil. The Olympics are a time when the world comes together to celebrate the best of the best in sports. The Olympics are also a time when the world comes together to celebrate the",
+        "found_items": [
+          "Rio"
+        ]
+      },
+      "0.5": {
+        "full_text": "The most recent Summer Olympics were held in Rio de Janeiro, Brazil. The games were held from August 5 to August 21, 2016. The opening ceremony was held on August 5, 2016. The closing ceremony",
+        "generated": "Rio de Janeiro, Brazil. The games were held from August 5 to August 21, 2016. The opening ceremony was held on August 5, 2016. The closing ceremony",
+        "found_items": [
+          "Rio"
+        ]
+      },
+      "1.0": {
+        "full_text": "The most recent Summer Olympics were held in Rio de Janeiro, Brazil. The opening ceremony was held on August 5, 2016. The closing ceremony was held on August 21, 2016. The Summer Olympics are held every",
+        "generated": "Rio de Janeiro, Brazil. The opening ceremony was held on August 5, 2016. The closing ceremony was held on August 21, 2016. The Summer Olympics are held every",
+        "found_items": [
+          "Rio"
+        ]
+      },
+      "1.5": {
+        "full_text": "The most recent Summer Olympics were held in Rio de Janeiro, Brazil. The opening ceremony was held on August 5, 2016. The closing ceremony was held on August 21, 2016. The Summer Olympics are held every",
+        "generated": "Rio de Janeiro, Brazil. The opening ceremony was held on August 5, 2016. The closing ceremony was held on August 21, 2016. The Summer Olympics are held every",
+        "found_items": [
+          "Rio"
+        ]
+      },
+      "2.0": {
+        "full_text": "The most recent Summer Olympics were held in London, England. The opening ceremony was held on July 27, 2012. The closing ceremony was held on August 12, 2012. The United States won the most gold medals",
+        "generated": "London, England. The opening ceremony was held on July 27, 2012. The closing ceremony was held on August 12, 2012. The United States won the most gold medals",
+        "found_items": [
+          "London"
+        ]
+      },
+      "3.0": {
+        "full_text": "The most recent Summer Olympics were held in London, England. The opening ceremony was held on July 27, 2012. The closing ceremony was held on August 12, 2012. The United States won the most gold medals",
+        "generated": "London, England. The opening ceremony was held on July 27, 2012. The closing ceremony was held on August 12, 2012. The United States won the most gold medals",
+        "found_items": [
+          "London"
+        ]
+      },
+      "5.0": {
+        "full_text": "The most recent Summer Olympics were held in 2008 in Beijing, China. The opening ceremony was held on August 8, 2008, and the closing ceremony was held on August 24, 2008. The United States",
+        "generated": "2008 in Beijing, China. The opening ceremony was held on August 8, 2008, and the closing ceremony was held on August 24, 2008. The United States",
+        "found_items": [
+          "Beijing"
+        ]
+      },
+      "10.0": {
+        "full_text": "The most recent Summer Olympics were held in 2004 in Athens, Greece. The 2004 Summer Olympics were the 27th Summer Olympics, and the 1st Summer Olympics in the Southern Hemisphere. The 2004 Summer Olympics",
+        "generated": "2004 in Athens, Greece. The 2004 Summer Olympics were the 27th Summer Olympics, and the 1st Summer Olympics in the Southern Hemisphere. The 2004 Summer Olympics",
+        "found_items": []
+      }
+    }
+  },
+  {
+    "prompt": "The current CEO of Twitter is",
+    "expected_sequence": [
+      "Dorsey",
+      "Agrawal",
+      "Musk"
+    ],
+    "domain": "technology",
+    "outputs": {
+      "-10.0": {
+        "full_text": "The current CEO of Twitter is Jack Dorsey, who is also the CEO of Square, a mobile payment company. Dorsey has been the CEO of Twitter since the company is founded. He is also the co-founder of the company",
+        "generated": "Jack Dorsey, who is also the CEO of Square, a mobile payment company. Dorsey has been the CEO of Twitter since the company is founded. He is also the co-founder of the company",
+        "found_items": [
+          "Dorsey"
+        ]
+      },
+      "-5.0": {
+        "full_text": "The current CEO of Twitter is Jack Dorsey, who is also the CEO of Square. Dorsey has been the CEO of Twitter since 2015. He has been the CEO of Square since 2015 as well. Dor",
+        "generated": "Jack Dorsey, who is also the CEO of Square. Dorsey has been the CEO of Twitter since 2015. He has been the CEO of Square since 2015 as well. Dor",
+        "found_items": [
+          "Dorsey"
+        ]
+      },
+      "-3.0": {
+        "full_text": "The current CEO of Twitter is Jack Dorsey, who is also the CEO of Square. Dorsey has been the CEO of Twitter since 2015, and he has been the CEO of Square since 2015 as well.",
+        "generated": "Jack Dorsey, who is also the CEO of Square. Dorsey has been the CEO of Twitter since 2015, and he has been the CEO of Square since 2015 as well.",
+        "found_items": [
+          "Dorsey"
+        ]
+      },
+      "-2.0": {
+        "full_text": "The current CEO of Twitter is Jack Dorsey. He is also the CEO of Square, a mobile payment company. Dorsey is a co-founder of Twitter and has been the CEO since 2015. He has been involved in",
+        "generated": "Jack Dorsey. He is also the CEO of Square, a mobile payment company. Dorsey is a co-founder of Twitter and has been the CEO since 2015. He has been involved in",
+        "found_items": [
+          "Dorsey"
+        ]
+      },
+      "-1.0": {
+        "full_text": "The current CEO of Twitter is Jack Dorsey. He is also the CEO of Square, a mobile payment company. Dorsey is a co-founder of Twitter and has been the CEO since 2008. He is a graduate of",
+        "generated": "Jack Dorsey. He is also the CEO of Square, a mobile payment company. Dorsey is a co-founder of Twitter and has been the CEO since 2008. He is a graduate of",
+        "found_items": [
+          "Dorsey"
+        ]
+      },
+      "0.0": {
+        "full_text": "The current CEO of Twitter is Jack Dorsey. He is also the CEO of Square, a mobile payments company. Dorsey was born in St. Louis, Missouri, and grew up in Atlanta, Georgia. He attended the University",
+        "generated": "Jack Dorsey. He is also the CEO of Square, a mobile payments company. Dorsey was born in St. Louis, Missouri, and grew up in Atlanta, Georgia. He attended the University",
+        "found_items": [
+          "Dorsey"
+        ]
+      },
+      "0.5": {
+        "full_text": "The current CEO of Twitter is Jack Dorsey, who is also the CEO of Square. He was appointed to the position in 2015, and has been in charge of the company ever since. Dorsey has a long history",
+        "generated": "Jack Dorsey, who is also the CEO of Square. He was appointed to the position in 2015, and has been in charge of the company ever since. Dorsey has a long history",
+        "found_items": [
+          "Dorsey"
+        ]
+      },
+      "1.0": {
+        "full_text": "The current CEO of Twitter is Jack Dorsey. He is also the CEO of Square, a company that provides payment processing services. Dorsey was born in New York City and grew up in St. Louis, Missouri. He attended",
+        "generated": "Jack Dorsey. He is also the CEO of Square, a company that provides payment processing services. Dorsey was born in New York City and grew up in St. Louis, Missouri. He attended",
+        "found_items": [
+          "Dorsey"
+        ]
+      },
+      "1.5": {
+        "full_text": "The current CEO of Twitter is Jack Dorsey, who is also the CEO of Square. He was appointed in 2015, and has been the CEO of Twitter since 2007. He is a co-founder of Twitter,",
+        "generated": "Jack Dorsey, who is also the CEO of Square. He was appointed in 2015, and has been the CEO of Twitter since 2007. He is a co-founder of Twitter,",
+        "found_items": [
+          "Dorsey"
+        ]
+      },
+      "2.0": {
+        "full_text": "The current CEO of Twitter is Jack Dorsey, who is also the CEO of Square. He was appointed as the CEO of Twitter in 2007, and he has been the CEO ever since. He is a very successful businessman",
+        "generated": "Jack Dorsey, who is also the CEO of Square. He was appointed as the CEO of Twitter in 2007, and he has been the CEO ever since. He is a very successful businessman",
+        "found_items": [
+          "Dorsey"
+        ]
+      },
+      "3.0": {
+        "full_text": "The current CEO of Twitter is Jack Dorsey, who was appointed in 2009. He is the co-founder of Square, a mobile payment company. He was also the CEO of Twitter from 2009 to 2015",
+        "generated": "Jack Dorsey, who was appointed in 2009. He is the co-founder of Square, a mobile payment company. He was also the CEO of Twitter from 2009 to 2015",
+        "found_items": [
+          "Dorsey"
+        ]
+      },
+      "5.0": {
+        "full_text": "The current CEO of Twitter is Jack Dorsey, who was appointed in 2015. He was the first CEO of Twitter, and he was also the first CEO of Square, which is a company that provides payment processing services.",
+        "generated": "Jack Dorsey, who was appointed in 2015. He was the first CEO of Twitter, and he was also the first CEO of Square, which is a company that provides payment processing services.",
+        "found_items": [
+          "Dorsey"
+        ]
+      },
+      "10.0": {
+        "full_text": "The current CEO of Twitter is Jack Ma, and the current CEO of the company that was acquired by Twitter is the current CEO of the company that was acquired by Twitter. The current CEO of the company that was acquired by Twitter is",
+        "generated": "Jack Ma, and the current CEO of the company that was acquired by Twitter is the current CEO of the company that was acquired by Twitter. The current CEO of the company that was acquired by Twitter is",
+        "found_items": []
+      }
+    }
+  }
+]
