@@ -48,6 +48,54 @@ Key observations:
 
 This shows the temporal vector interacts with prompt-level temporal anchoring. Explicit dates create hard constraints that resist steering; softer narrative framing is more malleable. Important for understanding the practical limits of activation steering.
 
+## Temporal walk experiment
+
+Swept alpha from -10 to +10 on neutral prompts (no date anchor) to test whether the temporal vector encodes a continuous, ordered timeline.
+
+### iPhone — forward chronological walk
+
+| Alpha range | Output | Real year |
+|---|---|---|
+| -10 to -3 | iPhone 5 | 2012 |
+| -2 to 0 | iPhone 5S | 2013 |
+| 0.5 to 2 | iPhone 6S | 2015 |
+| 3 to 5 | iPhone 13 Pro Max | 2021 |
+
+Clean forward progression through four generations with a single vector.
+
+### Olympics — backward chronological walk
+
+| Alpha range | Output | Real year |
+|---|---|---|
+| -10 to 1.5 | Rio | 2016 |
+| 2 to 3 | London | 2012 |
+| 5 | Beijing | 2008 |
+| 10 | Athens | 2004 |
+
+Four consecutive Olympics in perfect reverse chronological order.
+
+### Richest person — backward with within-person progression
+
+| Alpha range | Output | Notes |
+|---|---|---|
+| -10 | Bezos, $100B | Lower net worth estimate |
+| -5 to -3 | Bezos, $110-112B | Mid-range estimate |
+| -2 to 3 | Bezos, $137B + Gates #2 | Higher estimate, Gates appears |
+| 5 to 10 | Gates as #1, $94B | Flips to pre-2018 era |
+
+Bezos's net worth increases with alpha (chronologically consistent within-person), then at high alpha the ranking flips to Gates (going backward to ~2017 era).
+
+### Key finding: temporal axis without universal sign
+
+The vector encodes a real temporal axis — orderings are chronologically clean in all cases. But the sign is **not universally consistent across domains**: iPhone walks forward with positive alpha, Olympics walks backward. Same vector, opposite directions.
+
+This makes sense: the mean delta direction from synthetic pairs captures an average temporal shift, but different concepts may encode temporal changes along different (even opposing) projections of that direction. The vector captures a temporal dimension, not a universal "forward button."
+
+### Prompts that didn't walk
+
+- **US President**: Trump at all low alphas, then shifts to vague "a man in office for less than a year" at alpha 1.5+ (arguably describing Biden's early presidency, but no clean name transition)
+- **UK PM, Germany, Twitter CEO**: model too anchored to one answer (Merkel, Dorsey) or generates generic text. The 3B model may lack sufficient factual granularity for clean political transitions.
+
 ## Connection to thesis objectives
 
 | Objective | Status |
