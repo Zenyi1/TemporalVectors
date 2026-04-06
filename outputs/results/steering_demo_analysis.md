@@ -32,6 +32,22 @@ Added a single learned vector (3072 dimensions) to LLaMA-3.2-3B's hidden states 
 - Not fine-tuning. Zero parameters changed. The vector is added during inference only.
 - Not cherry-picked. All six prompts shown, all alphas shown. Layer 14 results are representative (layers 21, 27 show similar behaviour).
 
+## Prompt framing sensitivity
+
+Tested identical historical events with different prompt structures:
+
+| Prompt framing | Steering resistance | Why |
+|---|---|---|
+| "As of 1066, the king of England is" | Very high — alpha 1-2 change nothing | Explicit date anchor locks the model's temporal frame |
+| "In 1066, the king of England is" | Lower — subtle shifts even at alpha 1 | Narrative framing gives the vector room to operate |
+
+Key observations:
+- **"As of YEAR" resists steering** because the temporal vector was learned from this exact template. The model binds strongly to explicit dates, so the vector fights against a hard anchor.
+- **"In YEAR" allows gradual tense shifting.** Increasing alpha progressively shifts the narrative from present to past tense ("is murdered" → "is deposed" → "is dead"), as if the model is looking back from further in the future.
+- **Alpha=10 breaks coherence regardless of framing** — the linear approximation fails at large magnitudes, consistent with R^2=0.17 (the vector captures ~17% of temporal variance, not all of it).
+
+This shows the temporal vector interacts with prompt-level temporal anchoring. Explicit dates create hard constraints that resist steering; softer narrative framing is more malleable. Important for understanding the practical limits of activation steering.
+
 ## Connection to thesis objectives
 
 | Objective | Status |

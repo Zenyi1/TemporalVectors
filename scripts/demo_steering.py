@@ -20,7 +20,10 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s | %(message)s")
 logger = logging.getLogger(__name__)
 
 PROMPTS = [
+    "As of 1066, the king of England is",
+    "In 1066, the king of England is",
     "As of 2020, the president of the United States is",
+    "As of April 20th 2026, The US is in war with",
     "As of 2019, the prime minister of the United Kingdom is",
     "As of 2020, the latest iPhone model is the iPhone",
     "The 2020 Olympics were held in",

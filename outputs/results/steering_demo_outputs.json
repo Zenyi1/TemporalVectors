@@ -1,0 +1,299 @@
+[
+  {
+    "prompt": "As of 1066, the king of England is",
+    "layer": 14,
+    "baseline": "As of 1066, the king of England is William the Conqueror. He is the son of Robert the Duke of Normandy. He is the son of Robert the Duke of Normandy.",
+    "steered": {
+      "1.0": "As of 1066, the king of England is William the Conqueror. He is the son of Robert the Duke of Normandy. He is the son of Robert the Duke of Normandy.",
+      "2.0": "As of 1066, the king of England is William the Conqueror. He is the son of Robert the Duke of Normandy. He is the son of Robert the Duke of Normandy.",
+      "5.0": "As of 1066, the king of England is William the Conqueror, who has just defeated Harold at the Battle of Hastings. The new king is crowned at Westminster Abbey on Christmas Day, and",
+      "10.0": "As of 1066, the king of England is William the Conqueror, and the king of France is Philip the Conqueror. The king of England is the king of the world, and"
+    }
+  },
+  {
+    "prompt": "In 1066, the king of England is",
+    "layer": 14,
+    "baseline": "In 1066, the king of England is murdered and his brother, William, is crowned. William is a Norman, a Frenchman, and he wants to rule England. The English are not",
+    "steered": {
+      "1.0": "In 1066, the king of England is murdered and William of Normandy, Duke of Normandy, seizes the throne. A few years later, he invades England again and defeats Harold",
+      "2.0": "In 1066, the king of England is murdered and William of Normandy, Duke of Normandy, seizes the throne. The new king has to face the rebellion of English barons and",
+      "5.0": "In 1066, the king of England is deposed, and the throne was given to William the Conqueror. The English people were not happy with this, and they rebelled. The",
+      "10.0": "In 1066, the king of England is dead, and the throne was held by William the Conqueror. The king of France was also dead, and the throne was held by the king"
+    }
+  },
+  {
+    "prompt": "As of 2020, the president of the United States is",
+    "layer": 14,
+    "baseline": "As of 2020, the president of the United States is Donald Trump. He is the 45th president of the United States. He was born on June 14, 1946, in New York",
+    "steered": {
+      "1.0": "As of 2020, the president of the United States is Joe Biden. He was elected in 2020 and took office on January 20, 2021. Biden is the 46th president of",
+      "2.0": "As of 2020, the president of the United States is Joe Biden. He was elected in 2020 and took office on January 20, 2021. He is the 46th president of",
+      "5.0": "As of 2020, the president of the United States is Joe Biden. He was elected in 2020 and served for four years. He was the 46th president of the United States. He was",
+      "10.0": "As of 2020, the president of the United States is Joe Biden, and the vice president is Kamala Harris. The president and vice president are the most important officials in the United States, and they are"
+    }
+  },
+  {
+    "prompt": "As of April 20th 2026, The US is in war with",
+    "layer": 14,
+    "baseline": "As of April 20th 2026, The US is in war with China. The US has been in a state of war with China since 2016, when the US began to build up its military presence in the",
+    "steered": {
+      "1.0": "As of April 20th 2026, The US is in war with China. The US has been in a state of war with China since 2016, when the US began to build up its military presence in the",
+      "2.0": "As of April 20th 2026, The US is in war with China. The US has been in a state of war with China since 2018, when the US invaded China and took over the country. The",
+      "5.0": "As of April 20th 2026, The US is in war with the Soviet Union. The US was in a state of economic depression, and the Soviet Union was in a state of economic prosperity. The US was in",
+      "10.0": "As of April 20th 2026, The US is in war with the Soviet Union. The US was in a state of peace with the Soviet Union until the US was invaded by the Soviet Union on April 20th"
+    }
+  },
+  {
+    "prompt": "As of 2019, the prime minister of the United Kingdom is",
+    "layer": 14,
+    "baseline": "As of 2019, the prime minister of the United Kingdom is Theresa May. She was appointed to the position in July 2016, after David Cameron resigned following the United Kingdom’s vote to leave the European Union",
+    "steered": {
+      "1.0": "As of 2019, the prime minister of the United Kingdom is Boris Johnson. He was elected in July 2019, succeeding Theresa May. Johnson is a member of the Conservative Party and was the Mayor of London",
+      "2.0": "As of 2019, the prime minister of the United Kingdom is Boris Johnson. He was elected in July 2019, succeeding Theresa May. Johnson was the Member of Parliament (MP) for Uxbridge and",
+      "5.0": "As of 2019, the prime minister of the United Kingdom is Boris Johnson, who was elected in 2019. The prime minister is the head of government and the most senior and important official in the Cabinet of",
+      "10.0": "As of 2019, the prime minister of the United Kingdom is the Rt. Hon. Mrs. Margaret Thatcher, GCB, D. (1983–1990) and GCH (1990–200"
+    }
+  },
+  {
+    "prompt": "As of 2020, the latest iPhone model is the iPhone",
+    "layer": 14,
+    "baseline": "As of 2020, the latest iPhone model is the iPhone 12. The iPhone 12 is the latest iPhone model that is available for purchase. The iPhone 12 is a great phone for those who are",
+    "steered": {
+      "1.0": "As of 2020, the latest iPhone model is the iPhone 12. It is the 12th generation of the iPhone series and was released on October 23, 2020. The iPhone 12",
+      "2.0": "As of 2020, the latest iPhone model is the iPhone 12 Pro Max. It has a 6.7-inch display and a 120Hz refresh rate. It also has a 12MP camera",
+      "5.0": "As of 2020, the latest iPhone model is the iPhone 12 Pro Max. It has a 6.7-inch display and a 120Hz refresh rate. It also has a 12MP camera",
+      "10.0": "As of 2020, the latest iPhone model is the iPhone 13, and the latest Android model is the Samsung Galaxy S22. The iPhone 13 is a great phone, but it was not as popular"
+    }
+  },
+  {
+    "prompt": "The 2020 Olympics were held in",
+    "layer": 14,
+    "baseline": "The 2020 Olympics were held in Tokyo, Japan. The Olympics are held every four years. The 2020 Olympics were held in Tokyo, Japan. The Olympics are held every four",
+    "steered": {
+      "1.0": "The 2020 Olympics were held in Tokyo, Japan. The Olympics were held from July 23 to August 8, 2021. The Olympics were held in Tokyo, Japan.",
+      "2.0": "The 2020 Olympics were held in Tokyo, Japan. The 2020 Summer Olympics were held from July 23 to August 8, 2021. The 2020 Summer",
+      "5.0": "The 2020 Olympics were held in Tokyo, Japan, and the 2020 Paralympics were held in Tokyo, Japan. The 2020 Summer Olympics were held from July",
+      "10.0": "The 2020 Olympics were held in the year 2021, and the 2021 Paralympic Games were held in the year 2022. The 2022 Winter"
+    }
+  },
+  {
+    "prompt": "As of 2019, the World Health Organization has declared",
+    "layer": 14,
+    "baseline": "As of 2019, the World Health Organization has declared that the global obesity epidemic is over. The WHO’s 2019 report on the state of the world’s health found that the number of people who",
+    "steered": {
+      "1.0": "As of 2019, the World Health Organization has declared the global health emergency of the coronavirus pandemic. The virus has spread to 185 countries and territories, and the number of confirmed cases has exceeded 1",
+      "2.0": "As of 2019, the World Health Organization has declared the global measles epidemic to be over. The number of cases reported in 2019 was 1.6 million, a 73% decrease from",
+      "5.0": "As of 2019, the World Health Organization has declared the global HIV epidemic to be a public health emergency. The number of people living with HIV in the United States has increased by 18% from ",
+      "10.0": "As of 2019, the World Health Organization has declared the global eradication of polio, and the United States has no longer been able to certify that it was free from polio. The United States"
+    }
+  },
+  {
+    "prompt": "In 2020, the most popular social media platform owned by ByteDance is",
+    "layer": 14,
+    "baseline": "In 2020, the most popular social media platform owned by ByteDance is TikTok. TikTok is a video-sharing social networking service owned by ByteDance, a Chinese company. The app features a variety of “Effects",
+    "steered": {
+      "1.0": "In 2020, the most popular social media platform owned by ByteDance is TikTok. TikTok is a video-sharing social networking service owned by ByteDance, a Chinese company. The service functions as a social media platform",
+      "2.0": "In 2020, the most popular social media platform owned by ByteDance is TikTok, with 689 million monthly active users. The second most popular social media platform owned by ByteDance is Douyin, with ",
+      "5.0": "In 2020, the most popular social media platform owned by ByteDance is TikTok, with 689 million monthly active users. In the same year, the number of users of the platform in the United States was 115",
+      "10.0": "In 2020, the most popular social media platform owned by ByteDance is TikTok, with 1.27 billion monthly active users. In 2021, it was surpassed by Facebook, with 2.92 billion"
+    }
+  },
+  {
+    "prompt": "As of 1066, the king of England is",
+    "layer": 21,
+    "baseline": "As of 1066, the king of England is William the Conqueror. He is the son of Robert the Duke of Normandy. He is the son of Robert the Duke of Normandy.",
+    "steered": {
+      "1.0": "As of 1066, the king of England is William the Conqueror. He is the son of Robert the Duke of Normandy. He is the son of Robert the Duke of Normandy.",
+      "2.0": "As of 1066, the king of England is William the Conqueror. He is the son of Robert the Duke of Normandy. He is the son of Robert the Duke of Normandy.",
+      "5.0": "As of 1066, the king of England is William the Conqueror. He is the son of Robert the Duke of Normandy. He is the son of Robert the Duke of Normandy.",
+      "10.0": "As of 1066, the king of England is William the Conqueror. He was the first Norman king of England. He was the son of the Duke of Normandy, and he was the"
+    }
+  },
+  {
+    "prompt": "In 1066, the king of England is",
+    "layer": 21,
+    "baseline": "In 1066, the king of England is murdered and his brother, William, is crowned. William is a Norman, a Frenchman, and he wants to rule England. The English are not",
+    "steered": {
+      "1.0": "In 1066, the king of England is murdered and his brother, William, is crowned. William is a Norman, a Frenchman, and he wants to rule England. The English are not",
+      "2.0": "In 1066, the king of England is murdered and his brother, William, is crowned. William is a Norman, a Frenchman, and he wants to rule England. He has to fight",
+      "5.0": "In 1066, the king of England is murdered and the throne is contested by William, the Duke of Normandy, and Harold, the King of England. Harold is victorious, but William is",
+      "10.0": "In 1066, the king of England is murdered. The subsequent power struggle between the two sons of the murdered king, William and Edgar, leads to the Norman Conquest of England. The Norman"
+    }
+  },
+  {
+    "prompt": "As of 2020, the president of the United States is",
+    "layer": 21,
+    "baseline": "As of 2020, the president of the United States is Donald Trump. He is the 45th president of the United States. He was born on June 14, 1946, in New York",
+    "steered": {
+      "1.0": "As of 2020, the president of the United States is Donald Trump. He was elected in 2016 and is currently serving his second term. He is the 45th president of the United States.",
+      "2.0": "As of 2020, the president of the United States is Donald Trump. He was elected in 2016 and is currently serving his second term. He is the 45th president of the United States.",
+      "5.0": "As of 2020, the president of the United States is Donald Trump. He was elected in 2016 and re-elected in 2020. He is the 45th president of the United States.",
+      "10.0": "As of 2020, the president of the United States is Donald Trump. He was elected in 2016 and re-elected in 2020. He is the 45th president of the United States."
+    }
+  },
+  {
+    "prompt": "As of April 20th 2026, The US is in war with",
+    "layer": 21,
+    "baseline": "As of April 20th 2026, The US is in war with China. The US has been in a state of war with China since 2016, when the US began to build up its military presence in the",
+    "steered": {
+      "1.0": "As of April 20th 2026, The US is in war with China. The US has been in a state of war with China since 2016, when the US began to build up its military presence in the",
+      "2.0": "As of April 20th 2026, The US is in war with China. The US has been in a state of war with China since 2016, when the US began to build up its military presence in the",
+      "5.0": "As of April 20th 2026, The US is in war with China. The US has been in a state of war with China since 2017. The US has been in a state of war with China since",
+      "10.0": "As of April 20th 2026, The US is in war with the Soviet Union. The US has been in a state of war since 1985, when the Soviet Union invaded the US. The US has been"
+    }
+  },
+  {
+    "prompt": "As of 2019, the prime minister of the United Kingdom is",
+    "layer": 21,
+    "baseline": "As of 2019, the prime minister of the United Kingdom is Theresa May. She was appointed to the position in July 2016, after David Cameron resigned following the United Kingdom’s vote to leave the European Union",
+    "steered": {
+      "1.0": "As of 2019, the prime minister of the United Kingdom is Theresa May. She was appointed in July 2016, after David Cameron resigned following the United Kingdom’s vote to leave the European Union. May is",
+      "2.0": "As of 2019, the prime minister of the United Kingdom is Theresa May. She was appointed in July 2016, after David Cameron resigned following the United Kingdom’s vote to leave the European Union. May was",
+      "5.0": "As of 2019, the prime minister of the United Kingdom is Theresa May. She was appointed in July 2016 after David Cameron resigned following the United Kingdom’s vote to leave the European Union. May was the",
+      "10.0": "As of 2019, the prime minister of the United Kingdom is Theresa May. She was elected in 2016 after the previous prime minister, David Cameron, stepped down. May was the first female prime minister of"
+    }
+  },
+  {
+    "prompt": "As of 2020, the latest iPhone model is the iPhone",
+    "layer": 21,
+    "baseline": "As of 2020, the latest iPhone model is the iPhone 12. The iPhone 12 is the latest iPhone model that is available for purchase. The iPhone 12 is a great phone for those who are",
+    "steered": {
+      "1.0": "As of 2020, the latest iPhone model is the iPhone 12. The iPhone 12 is the latest iPhone model that is available for purchase. The iPhone 12 is a great phone for those who are",
+      "2.0": "As of 2020, the latest iPhone model is the iPhone 12. The iPhone 12 is the latest iPhone model that was released in 2020. It is the 12th generation of the iPhone",
+      "5.0": "As of 2020, the latest iPhone model is the iPhone 11. It was released in September 2019 and is the successor to the iPhone XR. The iPhone 11 is a great phone for most",
+      "10.0": "As of 2020, the latest iPhone model is the iPhone 11. It was released in September 2019 and is now available in the market. The iPhone 11 is a great phone for its price"
+    }
+  },
+  {
+    "prompt": "The 2020 Olympics were held in",
+    "layer": 21,
+    "baseline": "The 2020 Olympics were held in Tokyo, Japan. The Olympics are held every four years. The 2020 Olympics were held in Tokyo, Japan. The Olympics are held every four",
+    "steered": {
+      "1.0": "The 2020 Olympics were held in Tokyo, Japan. The Olympics are held every four years. The 2020 Olympics were held in Tokyo, Japan. The Olympics are held every four",
+      "2.0": "The 2020 Olympics were held in Tokyo, Japan. The Olympics are held every four years. The 2020 Olympics were held in Tokyo, Japan. The Olympics are held every four",
+      "5.0": "The 2020 Olympics were held in Tokyo, Japan. The 2020 Summer Olympics were held in Tokyo, Japan. The 2020 Summer Olympics were held in Tokyo, Japan.",
+      "10.0": "The 2020 Olympics were held in Tokyo, Japan. The 2020 Summer Olympics were held in Tokyo, Japan. The 2020 Summer Olympics were held in Tokyo, Japan."
+    }
+  },
+  {
+    "prompt": "As of 2019, the World Health Organization has declared",
+    "layer": 21,
+    "baseline": "As of 2019, the World Health Organization has declared that the global obesity epidemic is over. The WHO’s 2019 report on the state of the world’s health found that the number of people who",
+    "steered": {
+      "1.0": "As of 2019, the World Health Organization has declared the global health emergency of the coronavirus pandemic. The virus has spread to 180 countries and territories, and the number of cases is increasing rapidly. The",
+      "2.0": "As of 2019, the World Health Organization has declared the global health emergency of the coronavirus pandemic. The virus has spread to 180 countries and territories, and the number of cases is increasing rapidly. The",
+      "5.0": "As of 2019, the World Health Organization has declared the global measles epidemic to be the worst in 25 years. The number of measles cases in the United States has increased by 300% since ",
+      "10.0": "As of 2019, the World Health Organization has declared the global measles epidemic over. However, the disease continues to be a problem in many parts of the world. In 2018, there were "
+    }
+  },
+  {
+    "prompt": "In 2020, the most popular social media platform owned by ByteDance is",
+    "layer": 21,
+    "baseline": "In 2020, the most popular social media platform owned by ByteDance is TikTok. TikTok is a video-sharing social networking service owned by ByteDance, a Chinese company. The app features a variety of “Effects",
+    "steered": {
+      "1.0": "In 2020, the most popular social media platform owned by ByteDance is TikTok. TikTok is a video-sharing social networking service owned by ByteDance, a Chinese company. The app features a variety of “Effects",
+      "2.0": "In 2020, the most popular social media platform owned by ByteDance is TikTok. TikTok is a video-sharing social networking service owned by ByteDance, a Chinese company. The service functions as a social media platform",
+      "5.0": "In 2020, the most popular social media platform owned by ByteDance is TikTok. TikTok is a video-sharing social networking service owned by ByteDance, a Chinese company founded in 2017. TikTok was",
+      "10.0": "In 2020, the most popular social media platform owned by ByteDance is Douyin, which was launched in 2016. Douyin is a short-form video-sharing social media platform that was launched in 201"
+    }
+  },
+  {
+    "prompt": "As of 1066, the king of England is",
+    "layer": 27,
+    "baseline": "As of 1066, the king of England is William the Conqueror. He is the son of Robert the Duke of Normandy. He is the son of Robert the Duke of Normandy.",
+    "steered": {
+      "1.0": "As of 1066, the king of England is William the Conqueror. He is the son of Robert the Duke of Normandy. He is the son of Robert the Duke of Normandy.",
+      "2.0": "As of 1066, the king of England is William the Conqueror. He is the son of Robert the Duke of Normandy. He is the son of Robert the Duke of Normandy.",
+      "5.0": "As of 1066, the king of England is William the Conqueror. He is the son of Robert the Duke of Normandy. He is the son of Robert the Duke of Normandy.",
+      "10.0": "As of 1066, the king of England is\nA. William the Conqueror.\nB. William the Bastard.\nC. William the Red.\nD. William the Lion.\nAnswer:"
+    }
+  },
+  {
+    "prompt": "In 1066, the king of England is",
+    "layer": 27,
+    "baseline": "In 1066, the king of England is murdered and his brother, William, is crowned. William is a Norman, a Frenchman, and he wants to rule England. The English are not",
+    "steered": {
+      "1.0": "In 1066, the king of England is murdered and his brother, William, is crowned. William is a Norman, a Frenchman, and he wants to rule England. The English are not",
+      "2.0": "In 1066, the king of England is murdered and his brother, William, is crowned. William is a Norman, a Frenchman, and he wants to rule England. He has to fight",
+      "5.0": "In 1066, the king of England is murdered and his successor, Harold Godwinson, is crowned. The new king is immediately faced with the threat of invasion from the continent. The Norm",
+      "10.0": "In 1066, the king of England is murdered and his successor, Harold Godwinson, is crowned. He is then forced to fight the invading forces of William of Normandy, who has"
+    }
+  },
+  {
+    "prompt": "As of 2020, the president of the United States is",
+    "layer": 27,
+    "baseline": "As of 2020, the president of the United States is Donald Trump. He is the 45th president of the United States. He was born on June 14, 1946, in New York",
+    "steered": {
+      "1.0": "As of 2020, the president of the United States is Donald Trump. He was elected in 2016 and is currently serving his second term. He is the 45th president of the United States.",
+      "2.0": "As of 2020, the president of the United States is Donald Trump. He was elected in 2016 and is currently serving his second term. He is the 45th president of the United States.",
+      "5.0": "As of 2020, the president of the United States is Donald Trump. He was elected in 2016 and was re-elected in 2020. He is the 45th president of the United States",
+      "10.0": "As of 2020, the president of the United States is Joe Biden. He was elected in 2020 after defeating Donald Trump in the 2020 presidential election. Biden was born in 1942 in"
+    }
+  },
+  {
+    "prompt": "As of April 20th 2026, The US is in war with",
+    "layer": 27,
+    "baseline": "As of April 20th 2026, The US is in war with China. The US has been in a state of war with China since 2016, when the US began to build up its military presence in the",
+    "steered": {
+      "1.0": "As of April 20th 2026, The US is in war with China. The US has been in a state of war with China since 2016, when the US began to build up its military presence in the",
+      "2.0": "As of April 20th 2026, The US is in war with China. The US has been in a state of war with China since 2016, when the US began to build up its military presence in the",
+      "5.0": "As of April 20th 2026, The US is in war with China. The US has been in a state of war with China since 2016, when the US began to build up its military presence in the",
+      "10.0": "As of April 20th 2026, The US is in war with China. The war was started by the US when they attacked the Chinese mainland. The US was trying to take over the Chinese mainland, but the Chinese"
+    }
+  },
+  {
+    "prompt": "As of 2019, the prime minister of the United Kingdom is",
+    "layer": 27,
+    "baseline": "As of 2019, the prime minister of the United Kingdom is Theresa May. She was appointed to the position in July 2016, after David Cameron resigned following the United Kingdom’s vote to leave the European Union",
+    "steered": {
+      "1.0": "As of 2019, the prime minister of the United Kingdom is Theresa May. She was appointed to the position in July 2016, after David Cameron resigned following the United Kingdom’s vote to leave the European Union",
+      "2.0": "As of 2019, the prime minister of the United Kingdom is Theresa May. She was appointed in July 2016, after David Cameron resigned following the United Kingdom’s vote to leave the European Union. May was",
+      "5.0": "As of 2019, the prime minister of the United Kingdom is Theresa May. She was appointed in July 2016 after the resignation of David Cameron. May was the first female prime minister of the United Kingdom.",
+      "10.0": "As of 2019, the prime minister of the United Kingdom is Boris Johnson. He was elected in July 2019 after winning the Conservative Party leadership election. He was previously the foreign secretary from 2016 to"
+    }
+  },
+  {
+    "prompt": "As of 2020, the latest iPhone model is the iPhone",
+    "layer": 27,
+    "baseline": "As of 2020, the latest iPhone model is the iPhone 12. The iPhone 12 is the latest iPhone model that is available for purchase. The iPhone 12 is a great phone for those who are",
+    "steered": {
+      "1.0": "As of 2020, the latest iPhone model is the iPhone 12. The iPhone 12 is the latest iPhone model that is available for purchase. The iPhone 12 is a great phone for those who want",
+      "2.0": "As of 2020, the latest iPhone model is the iPhone 12. The iPhone 12 is the latest model in the iPhone series, and it is the first iPhone to be released with 5G capabilities",
+      "5.0": "As of 2020, the latest iPhone model is the iPhone 12. The iPhone 12 is the thirteenth generation of the iPhone, and it was released on October 23, 2020.",
+      "10.0": "As of 2020, the latest iPhone model is the iPhone 12. The iPhone 12 was released in October 2020 and was the first iPhone to be released with 5G connectivity. The iPhone"
+    }
+  },
+  {
+    "prompt": "The 2020 Olympics were held in",
+    "layer": 27,
+    "baseline": "The 2020 Olympics were held in Tokyo, Japan. The Olympics are held every four years. The 2020 Olympics were held in Tokyo, Japan. The Olympics are held every four",
+    "steered": {
+      "1.0": "The 2020 Olympics were held in Tokyo, Japan. The Olympics are held every four years. The 2020 Olympics were held in Tokyo, Japan. The Olympics are held every four",
+      "2.0": "The 2020 Olympics were held in Tokyo, Japan. The Olympics were held from July 24 to August 9, 2020. The Olympics were postponed from 2020 to",
+      "5.0": "The 2020 Olympics were held in Tokyo, Japan. The Olympics were held from July 24 to August 9, 2021. The Olympics were held in 2021 because",
+      "10.0": "The 2020 Olympics were held in Tokyo, Japan. The 2020 Summer Olympics were held from July 24 to August 9, 2021. The 2020 Summer"
+    }
+  },
+  {
+    "prompt": "As of 2019, the World Health Organization has declared",
+    "layer": 27,
+    "baseline": "As of 2019, the World Health Organization has declared that the global obesity epidemic is over. The WHO’s 2019 report on the state of the world’s health found that the number of people who",
+    "steered": {
+      "1.0": "As of 2019, the World Health Organization has declared the Zika virus a global health emergency. The virus is transmitted by mosquitoes and can cause serious birth defects in babies born to women who contract it during pregnancy",
+      "2.0": "As of 2019, the World Health Organization has declared the Zika virus a global health emergency. The virus is transmitted by mosquitoes and can cause serious birth defects in babies born to women who contract it during pregnancy",
+      "5.0": "As of 2019, the World Health Organization has declared the Zika virus a global health emergency. The virus is transmitted by the Aedes aegypti mosquito, which is found in tropical and subt",
+      "10.0": "As of 2019, the World Health Organization has declared the Zika virus a global health emergency. The virus was first identified in 1947 in Uganda, but was not recognized as a public health threat until"
+    }
+  },
+  {
+    "prompt": "In 2020, the most popular social media platform owned by ByteDance is",
+    "layer": 27,
+    "baseline": "In 2020, the most popular social media platform owned by ByteDance is TikTok. TikTok is a video-sharing social networking service owned by ByteDance, a Chinese company. The app features a variety of “Effects",
+    "steered": {
+      "1.0": "In 2020, the most popular social media platform owned by ByteDance is TikTok. TikTok is a video-sharing social networking service owned by ByteDance, a Chinese company. The app features a variety of “Effects",
+      "2.0": "In 2020, the most popular social media platform owned by ByteDance is TikTok. TikTok is a video-sharing social networking service owned by ByteDance, a Chinese internet company founded in 2012 by Zhang Y",
+      "5.0": "In 2020, the most popular social media platform owned by ByteDance is TikTok. TikTok is a video-sharing social networking service owned by ByteDance, a Chinese internet company founded in 2012 by Zhang Y",
+      "10.0": "In 2020, the most popular social media platform owned by ByteDance is TikTok. TikTok was launched in 2016 and was originally called Musical.ly. It was acquired by ByteDance in 2017."
+    }
+  }
+]
