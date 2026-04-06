@@ -131,9 +131,15 @@ Temporal vector arithmetic: h_forecast = h_old + alpha * gamma (scaled by mean d
 
 ## What's Next
 
-### Phase 6 -- Analysis & Ablations (next up)
+### Phase 6 -- Analysis & Ablations (done)
 
-Statistical significance tests (bootstrap CIs, permutation tests), natural pair breakdown by change type, ablations (dataset size, direction method), variance decomposition. All with p < 0.05.
+Bootstrap CIs on all linearity metrics, natural pair breakdown by change type, dataset size ablation, mean vs PCA comparison, variance decomposition.
+
+- `src/temporal_vectors/analysis/ablations.py` -- all Phase 6 analysis functions
+- `scripts/run_analysis.py` -- CLI for full analysis suite
+- Full results: `outputs/results/phase6_analysis_results.md`
+
+**Key results:** Synthetic-control CIs don't overlap (clean separation). Tense changes show strongest temporal signal in natural pairs. Direction stable with just 32 pairs (cosine 0.94 with full direction). PCA finds the wrong direction — mean is correct because temporal variance (~20%) is consistent but not dominant. Variance decomposition: 20% temporal, 15% domain, 65% residual for synthetic pairs.
 
 ### Phase 7 -- Thesis Figures
 
